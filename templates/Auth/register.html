@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'Auth/base.html' %}
 
 {% block head %}
 <title>test</title>
@@ -6,7 +6,7 @@
 
 {% block body %}
 <div class="login-box">
-  <h2>Login</h2>
+  <h2>Register</h2>
   <form action="google.com" method="POST">
     <div class="user-box">
       <input type="text" name="" required="">
@@ -27,6 +27,7 @@
     <div class="">
       <input class="login-button" type="submit" name="" value="Register">
     </div>
+    <a href="{{ url_for('login') }}">Login</a>
   </form>
 </div>
 
