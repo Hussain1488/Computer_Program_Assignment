@@ -7,17 +7,17 @@
 {% block body %}
 <div class="login-box">
   <h2>Register</h2>
-  <form action="google.com" method="POST">
+  <form action="{{ url_for('register') }}" method="POST">
     <div class="user-box">
-      <input type="text" name="" required="">
+      <input type="email" name="email" required="">
       <label>Email</label>
     </div>
     <div class="user-box">
-      <input type="text" name="" required="">
+      <input type="text" name="username" required="">
       <label>Username</label>
     </div>
     <div class="user-box">
-      <input type="password" name="" required="">
+      <input type="password" name="password" required="">
       <label>Password</label>
     </div>
     <div class="user-box">
