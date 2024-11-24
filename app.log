@@ -1,0 +1,31 @@
+2024-11-24 18:57:30,401 - WARNING -  * Debugger is active!
+2024-11-24 18:57:30,406 - INFO -  * Debugger PIN: 355-610-236
+2024-11-24 18:57:41,046 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-11-24 18:57:42,070 - WARNING -  * Debugger is active!
+2024-11-24 18:57:42,074 - INFO -  * Debugger PIN: 355-610-236
+2024-11-24 18:57:44,185 - ERROR - Invalid login attempt for user None
+2024-11-24 18:57:44,194 - INFO - 127.0.0.1 - - [24/Nov/2024 18:57:44] "POST /login HTTP/1.1" 200 -
+2024-11-24 18:57:44,495 - INFO - 127.0.0.1 - - [24/Nov/2024 18:57:44] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-11-24 18:57:47,088 - ERROR - Invalid login attempt for user None
+2024-11-24 18:57:47,090 - INFO - 127.0.0.1 - - [24/Nov/2024 18:57:47] "POST /login HTTP/1.1" 200 -
+2024-11-24 18:57:47,422 - INFO - 127.0.0.1 - - [24/Nov/2024 18:57:47] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-11-24 18:58:15,577 - ERROR - Invalid login attempt for user None
+2024-11-24 18:58:15,578 - INFO - 127.0.0.1 - - [24/Nov/2024 18:58:15] "POST /login HTTP/1.1" 200 -
+2024-11-24 18:58:15,903 - INFO - 127.0.0.1 - - [24/Nov/2024 18:58:15] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-11-24 18:58:27,784 - ERROR - Invalid login attempt for user None
+2024-11-24 18:58:27,785 - INFO - 127.0.0.1 - - [24/Nov/2024 18:58:27] "POST /login HTTP/1.1" 200 -
+2024-11-24 18:58:28,120 - INFO - 127.0.0.1 - - [24/Nov/2024 18:58:28] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-11-24 18:59:10,563 - ERROR - Invalid login attempt for user None
+2024-11-24 18:59:10,567 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:10] "POST /login HTTP/1.1" 200 -
+2024-11-24 18:59:10,917 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:10] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-11-24 18:59:15,282 - ERROR - Invalid login attempt for user elio
+2024-11-24 18:59:15,283 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:15] "POST /login HTTP/1.1" 200 -
+2024-11-24 18:59:15,613 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:15] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-11-24 18:59:27,584 - ERROR - Invalid login attempt for user elio
+2024-11-24 18:59:27,585 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:27] "POST /login HTTP/1.1" 200 -
+2024-11-24 18:59:27,922 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:27] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-11-24 18:59:41,045 - INFO - User Elio logged in successfully
+2024-11-24 18:59:41,046 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-11-24 18:59:41,381 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:41] "GET / HTTP/1.1" 200 -
+2024-11-24 18:59:41,624 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:41] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-11-24 18:59:41,782 - INFO - 127.0.0.1 - - [24/Nov/2024 18:59:41] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
