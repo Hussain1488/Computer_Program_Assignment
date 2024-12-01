@@ -1,146 +1,124 @@
-{% extends 'dashboard/base.html' %}
+{% extends 'dashboard/base.html' %} {% block head %}
+<title>Carbon FootPrint</title>
+{% endblock %} {% block body %}
 
-{% block head %}
-  <title>test</title>
-{% endblock %}
+<div
+  class="bg-green-100 shadow-md rounded-lg p-10 max-w-xl w-full mx-auto mt-10"
+>
+  <form id="carbonFootprintForm" method="POST" action="/calculate" class="">
+    <div class="bg-white p-2 rounded-lg">
+      <h1 class="text-2xl font-bold text-center mb-6">Energy Usage</h1>
+      <div class="mt-8">
+        <label
+          for="transportation"
+          class="block text-sm font-medium text-gray-700"
+          >What is your avrage monthly electricity bill in euros?</label
+        >
+        <input
+          type="number"
+          name="milesTravelled[]"
+          min="0"
+          placeholder="100"
+          required
+          class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+        />
+      </div>
+      <div id="transportationDetails" class="mt-8">
+        <label
+          for="transportation"
+          class="block text-sm font-medium text-gray-700"
+          >What is your avrage monthly natural gas bill in euros?</label
+        >
+        <div class="dynamic-input">
+          <input
+            type="number"
+            name="milesTravelled[]"
+            min="0"
+            placeholder="100"
+            required
+            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+          />
+        </div>
+      </div>
+      <div id="transportationDetails" class="my-8">
+        <label
+          for="transportation"
+          class="block text-sm font-medium text-gray-700"
+          >What is your avrage monthly fuel bill in euros?</label
+        >
+        <div class="dynamic-input">
+          <input
+            type="number"
+            name="milesTravelled[]"
+            min="0"
+            placeholder="100"
+            required
+            class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+          />
+        </div>
+      </div>
+      <!-- <button type="button" class="add-btn" onclick="addTransportationField()"> -->
+      <!-- Add More Miles
+      </button> -->
+    </div>
 
-{% block body %}
+    <div class="bg-white p-2 mt-4 rounded-lg">
+      <h1 class="text-2xl font-bold text-center mb-6">Waste</h1>
+      <label
+        for="electricityUsage"
+        class="block text-sm font-medium text-gray-700"
+        >Monthly Electricity Usage (kWh)</label
+      >
+      <input
+        type="number"
+        id="electricityUsage"
+        name="electricityUsage"
+        min="0"
+        required
+        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+      />
+    </div>
+    <div class="bg-white p-2 mt-4 rounded-lg">
+      <h1 class="text-2xl font-bold text-center mb-6">Business Travel</h1>
+      <label for="gasUsage" class="block text-sm font-medium text-gray-700"
+        >Monthly Gas Usage (cubic meters)</label
+      >
+      <input
+        type="number"
+        id="gasUsage"
+        name="gasUsage"
+        min="0"
+        required
+        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+      />
+    </div>
 
-<div class="relative overflow-x-auto m-5">
-  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-    <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-      <tr>
-        <th scope="col" class="px-6 py-3">
-          Product name
-        </th>
-        <th scope="col" class="px-6 py-3">
-          Color
-        </th>
-        <th scope="col" class="px-6 py-3">
-          Category
-        </th>
-        <th scope="col" class="px-6 py-3">
-          Price
-        </th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-          Apple MacBook Pro 17"
-        </th>
-        <td class="px-6 py-4">
-          Silver
-        </td>
-        <td class="px-6 py-4">
-          Laptop
-        </td>
-        <td class="px-6 py-4">
-          $2999
-        </td>
-      </tr>
-      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-          Microsoft Surface Pro
-        </th>
-        <td class="px-6 py-4">
-          White
-        </td>
-        <td class="px-6 py-4">
-          Laptop PC
-        </td>
-        <td class="px-6 py-4">
-          $1999
-        </td>
-      </tr>
-      <tr class="bg-white dark:bg-gray-800">
-        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-          Magic Mouse 2
-        </th>
-        <td class="px-6 py-4">
-          Black
-        </td>
-        <td class="px-6 py-4">
-          Accessories
-        </td>
-        <td class="px-6 py-4">
-          $99
-        </td>
-      </tr>
-    </tbody>
-  </table>
+    <!-- <div class="bg-white p-2 mt-4 rounded-lg">
+      <h1 class="text-2xl font-bold text-center mb-6">
+        Carbon Footprint Calculator
+      </h1>
+      <label for="waste" class="block text-sm font-medium text-gray-700"
+        >Household Waste per Week (kg)</label
+      >
+      <input
+        type="number"
+        id="waste"
+        name="waste"
+        min="0"
+        required
+        class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500"
+      />
+    </div> -->
+
+    <div>
+      <button
+        type="submit"
+        class="mt-10 w-full bg-indigo-600 text-white font-medium py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+      >
+        Calculate Footprint
+      </button>
+    </div>
+  </form>
 </div>
 
-<fieldset class="m-5">
-  <legend class="sr-only">Checkbox variants</legend>
-
-    <div class="mb-5">
-      <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your email</label>
-      <input type="email" id="email"
-        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        placeholder="name@flowbite.com" required />
-    </div>
-    <div class="mb-5">
-      <label for="password" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your password</label>
-      <input type="password" id="password"
-        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-        required />
-    </div>
-    <div class="flex items-start mb-5">
-      <div class="flex items-center h-5">
-        <input id="remember" type="checkbox" value=""
-          class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-          required />
-      </div>
-      <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember me</label>
-    </div>
-    <button type="submit"
-      class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
-
-
-  <div class="flex items-center mb-4">
-    <input checked id="checkbox-1" type="checkbox" value=""
-      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox-1" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree to the <a href="#"
-        class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
-  </div>
-
-  <div class="flex items-center mb-4">
-    <input id="checkbox-2" type="checkbox" value=""
-      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I want to get promotional
-      offers</label>
-  </div>
-
-  <div class="flex items-center mb-4">
-    <input id="checkbox-3" type="checkbox" value=""
-      class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    <label for="checkbox-3" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I am 18 years or
-      older</label>
-  </div>
-
-  <div class="flex mb-4">
-    <div class="flex items-center h-5">
-      <input id="helper-checkbox" aria-describedby="helper-checkbox-text" type="checkbox" value=""
-        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-    </div>
-    <div class="ms-2 text-sm">
-      <label for="helper-checkbox" class="font-medium text-gray-900 dark:text-gray-300">Free shipping via
-        Flowbite</label>
-      <p id="helper-checkbox-text" class="text-xs font-normal text-gray-500 dark:text-gray-400">For orders shipped from
-        $25 in books or $29 in other categories</p>
-    </div>
-  </div>
-
-  <div class="flex items-center">
-    <input id="international-shipping-disabled" type="checkbox" value=""
-      class="w-4 h-4 border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800 dark:focus:ring-offset-gray-800"
-      disabled>
-    <label for="international-shipping-disabled"
-      class="ms-2 text-sm font-medium text-gray-400 dark:text-gray-500">Eligible for international shipping
-      (disabled)</label>
-  </div>
-</fieldset>
-
 {% endblock %}
-

@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style/main.css') }}" />
-  <link rel="stylesheet" href="{{ url_for('static', filename='style/tailwind.css') }}" />
-{% block head %}
-
-{% endblock %}
-</head>
-<body>
-  {% include 'dashboard/partials/header.html' %}
-{% block body %}
-  
-{% endblock %}</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/main.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/tailwind.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              darkBg: "#1a202c",
+              darkCard: "#2d3748",
+              darkText: "#cbd5e0",
+            },
+          },
+        },
+      };
+    </script>
+    {% block head %} {% endblock %}
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    {% include 'dashboard/partials/header.html' %} {% block body %} {% endblock
+    %} {% include 'dashboard/partials/flasher.html' %}
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </body>
 </html>

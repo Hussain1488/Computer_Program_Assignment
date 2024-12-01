@@ -21,6 +21,7 @@ logging.basicConfig(filename='app.log', level=logging.DEBUG,
 # Routes
 @app.route('/')
 def index():
+    flash('Login successful!', 'success') # Success message
     return render_template('dashboard/index.html')
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -32,7 +33,7 @@ def login():
 
         if user and user.check_password(password):
             app.logger.info(f"User {username} logged in successfully")
-            flash('Login successful!', 'success')
+            flash('Login successful!', 'success')  # Success message
             return redirect(url_for('index'))
         else:
             app.logger.error(f"Invalid login attempt for user {username}")

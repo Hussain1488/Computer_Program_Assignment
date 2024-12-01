@@ -31,7 +31,13 @@ This is a Flask-based web application for tracking user activity and calculating
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-repo/flask-carbon-footprint.git
    cd flask-carbon-footprint
+   ```
+
+2. to run tailwindCss:
+   ```bash
+   npx tailwindcss -i ./src/tailwind.css -o ./static/style/tailwind.css --watch
    ```
