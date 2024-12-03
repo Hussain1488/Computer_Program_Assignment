@@ -1,0 +1,197 @@
+{% extends 'dashboard/base.html' %} {% block head %}
+<title>Carbon FootPrint</title>
+{% endblock %} {% block body %}
+
+<section class="bg-gray-50 dark:bg-gray-900">
+  <div
+    class="bg-gray-100 rounded-lg dark:bg-gray-800 py-8 px-4 mx-auto max-w-screen-xl"
+  >
+    <form class="mt-8 space-y-6" action="#">
+      <div class="lg:pt-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+        <div class="flex flex-col justify-center">
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            Energy Usage
+          </h1>
+          <p
+            class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            High energy consumption contributes significantly to greenhouse gas
+            emissions, especially if the energy comes from non-renewable
+            sources.
+          </p>
+        </div>
+        <div>
+          <div
+            class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white dark:bg-gray-800"
+          >
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+              Energy Usage Information
+            </h2>
+            <div>
+              <label
+                for=""
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >What is your avrage monthly electricity bill in euros?</label
+              >
+              <input
+                type="text"
+                name="email"
+                id=""
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="100"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for=""
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >What is your avrage monthly natural gas bill in euros?</label
+              >
+              <input
+                type="text"
+                name="email"
+                id=""
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="100"
+                required
+              />
+            </div>
+            <div>
+              <label
+                for=""
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >What is your avrage monthly fuel bill in euros?</label
+              >
+              <input
+                type="text"
+                name="text"
+                id=""
+                placeholder="100"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:pt-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+        <div class="flex flex-col justify-center">
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            Waste
+          </h1>
+          <p
+            class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            Improper waste management leads to pollution and the release of
+            harmful methane gases from landfills.
+          </p>
+        </div>
+        <div>
+          <div
+            class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white dark:bg-gray-800"
+          >
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+              Waste Information
+            </h2>
+            <div>
+              <label
+                for=""
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >How much waste do you generate per month in kilograms?</label
+              >
+              <input
+                type="text"
+                name="email"
+                id=""
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="100"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for=""
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >how much of that waste is recycled or composted (in
+                percentage)?</label
+              >
+              <input
+                type="text"
+                name="text"
+                id=""
+                placeholder="100"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:pt-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+        <div class="flex flex-col justify-center">
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            Business Travel
+          </h1>
+          <p
+            class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            Frequent business travel, especially by air or car, greatly
+            increases carbon emissions and environmental impact.
+          </p>
+        </div>
+        <div>
+          <div
+            class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white dark:bg-gray-800"
+          >
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+              Business Travel Information
+            </h2>
+            <div>
+              <label
+                for=""
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >How many kilometers do your employees travel per year for
+                business purposes?</label
+              >
+              <input
+                type="text"
+                name="email"
+                id=""
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="100"
+                required
+              />
+            </div>
+
+            <div>
+              <label
+                for=""
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >What is the average fuel efficiency of the vehicles used for
+                business travel in liters per 100 kilometers?</label
+              >
+              <input
+                type="text"
+                name="text"
+                id=""
+                placeholder="100"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+{% endblock %}

@@ -3,6 +3,8 @@ from flask_migrate import Migrate
 from extensions import db, bcrypt
 from classes import User, FootPrintData, Standard
 import logging
+from flask_login import LoginManager, UserMixin, login_user, logout_user, current_user
+
 
 app = Flask(__name__)
 
@@ -23,6 +25,10 @@ logging.basicConfig(filename='app.log', level=logging.DEBUG,
 def index():
     flash('Login successful!', 'success') # Success message
     return render_template('dashboard/index.html')
+
+@app.route('/calculate')
+def calculate():
+    return render_template('dashboard/informant_form.html')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
