@@ -9,7 +9,7 @@
         type="text"
         name="email"
         required=""
-        value="{{ request.form.get('email') }}"
+        value="{{ request.form.get('email', '') }}"
       />
       <label>Email</label>
     </div>
@@ -18,7 +18,7 @@
         type="text"
         name="username"
         required=""
-        value="{{ request.form.get('username') }}"
+        value="{{ request.form.get('username', '') }}"
       />
       <label>Username</label>
     </div>
@@ -27,7 +27,7 @@
         type="text"
         name="company_name"
         required=""
-        value="{{ request.form.get('username') }}"
+        value="{{ request.form.get('company_name', '')  }}"
       />
       <label>campany name</label>
     </div>

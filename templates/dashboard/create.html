@@ -2,11 +2,56 @@
 <title>Carbon FootPrint</title>
 {% endblock %} {% block body %}
 
-<section class="bg-gray-50 dark:bg-gray-900">
+<section class="bg-gray-50 dark:bg-gray-900 mt-20">
   <div
     class="bg-gray-100 rounded-lg dark:bg-gray-800 py-8 px-4 mx-auto max-w-screen-xl"
   >
-    <form class="mt-8 space-y-6" action="#">
+    <form
+      class="mt-8 space-y-6"
+      action="{{ url_for('calculate') }}"
+      method="POST"
+    >
+      {% if not current_user.is_authenticated %}
+      <div class="lg:pt-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
+        <div class="flex flex-col justify-center">
+          <h1
+            class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white"
+          >
+            Company Name
+          </h1>
+          <p
+            class="mb-6 text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400"
+          >
+            if you register your company and login as user you can come and
+            update and have a free account for ever!
+          </p>
+        </div>
+        <div>
+          <div
+            class="w-full lg:max-w-xl p-6 space-y-8 sm:p-8 bg-white dark:bg-gray-800"
+          >
+            <h2 class="text-2xl font-bold text-gray-900 dark:text-white">
+              please insert you company name:
+            </h2>
+            <div>
+              <label
+                for=""
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+                >Company Name</label
+              >
+              <input
+                type="text"
+                name="company_name"
+                id=""
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Example Company"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
       <div class="lg:pt-16 grid lg:grid-cols-2 gap-8 lg:gap-16">
         <div class="flex flex-col justify-center">
           <h1
@@ -36,9 +81,11 @@
                 >What is your avrage monthly electricity bill in euros?</label
               >
               <input
-                type="text"
-                name="email"
+                type="number"
+                step="0.01"
+                name="electricity_bill"
                 id=""
+                value="{{ request.form.get('electricity_bill') }}"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="100"
                 required
@@ -51,9 +98,11 @@
                 >What is your avrage monthly natural gas bill in euros?</label
               >
               <input
-                type="text"
-                name="email"
+                type="number"
+                step="0.01"
+                name="gas_bill"
                 id=""
+                value="{{ request.form.get('gas_bill') }}"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="100"
                 required
@@ -66,9 +115,11 @@
                 >What is your avrage monthly fuel bill in euros?</label
               >
               <input
-                type="text"
-                name="text"
+                type="number"
+                step="0.01"
+                name="fuel_bill"
                 id=""
+                value="{{ request.form.get('fuel_bill') }}"
                 placeholder="100"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
@@ -105,9 +156,11 @@
                 >How much waste do you generate per month in kilograms?</label
               >
               <input
-                type="text"
-                name="email"
+                type="number"
+                step="0.01"
+                name="waste_generate"
                 id=""
+                value="{{ request.form.get('waste_generate') }}"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="100"
                 required
@@ -122,9 +175,11 @@
                 percentage)?</label
               >
               <input
-                type="text"
-                name="text"
+                type="number"
+                step="0.01"
+                name="recycled_waste"
                 id=""
+                value="{{ request.form.get('recycled_waste') }}"
                 placeholder="100"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
@@ -162,9 +217,11 @@
                 business purposes?</label
               >
               <input
-                type="text"
-                name="email"
+                type="number"
+                step="0.01"
+                name="yearly_travel"
                 id=""
+                value="{{ request.form.get('yearly_travel') }}"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="100"
                 required
@@ -179,9 +236,11 @@
                 business travel in liters per 100 kilometers?</label
               >
               <input
-                type="text"
-                name="text"
+                type="number"
+                step="0.01"
+                name="fuel_usage"
                 id=""
+                value="{{ request.form.get('fuel_usage') }}"
                 placeholder="100"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 required
@@ -190,6 +249,11 @@
           </div>
         </div>
       </div>
+      <button
+        class="w-full text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+      >
+        Submit my Form
+      </button>
     </form>
   </div>
 </section>

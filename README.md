@@ -41,3 +41,16 @@ This is a Flask-based web application for tracking user activity and calculating
    ```bash
    npx tailwindcss -i ./src/tailwind.css -o ./static/style/tailwind.css --watch
    ```
+3. database start:
+   ```bash
+   1. pip install flask-migrate
+   ```
+   ```bash
+   2. flask db init
+   ```
+   ```bash
+   3. flask db migrate -m "Initial migration"
+   ```
+   ```bash
+   4. flask db upgrade
+   ```
