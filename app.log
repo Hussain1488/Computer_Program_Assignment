@@ -811,3 +811,708 @@
 2024-12-03 20:20:47,760 - INFO -  * Debugger PIN: 355-610-236
 2024-12-03 20:20:50,992 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
 2024-12-03 20:20:51,124 - INFO -  * Restarting with stat
+2024-12-03 20:24:37,452 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 20:24:37,452 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 20:24:37,453 - INFO -  * Restarting with stat
+2024-12-03 20:24:38,479 - WARNING -  * Debugger is active!
+2024-12-03 20:24:38,486 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 20:24:38,582 - INFO - 127.0.0.1 - - [03/Dec/2024 20:24:38] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:24:38,777 - INFO - 127.0.0.1 - - [03/Dec/2024 20:24:38] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:24:38,782 - INFO - 127.0.0.1 - - [03/Dec/2024 20:24:38] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:24:39,020 - INFO - 127.0.0.1 - - [03/Dec/2024 20:24:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:24:59,261 - INFO - 127.0.0.1 - - [03/Dec/2024 20:24:59] "GET / HTTP/1.1" 200 -
+2024-12-03 20:24:59,295 - INFO - 127.0.0.1 - - [03/Dec/2024 20:24:59] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:24:59,514 - INFO - 127.0.0.1 - - [03/Dec/2024 20:24:59] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:24:59,605 - INFO - 127.0.0.1 - - [03/Dec/2024 20:24:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:25:08,655 - INFO - 127.0.0.1 - - [03/Dec/2024 20:25:08] "GET / HTTP/1.1" 200 -
+2024-12-03 20:25:08,682 - INFO - 127.0.0.1 - - [03/Dec/2024 20:25:08] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:25:08,890 - INFO - 127.0.0.1 - - [03/Dec/2024 20:25:08] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:25:09,000 - INFO - 127.0.0.1 - - [03/Dec/2024 20:25:09] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:25:51,230 - INFO - 127.0.0.1 - - [03/Dec/2024 20:25:51] "GET / HTTP/1.1" 200 -
+2024-12-03 20:25:51,258 - INFO - 127.0.0.1 - - [03/Dec/2024 20:25:51] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:25:51,493 - INFO - 127.0.0.1 - - [03/Dec/2024 20:25:51] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:25:51,572 - INFO - 127.0.0.1 - - [03/Dec/2024 20:25:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:26:05,939 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:05] "GET / HTTP/1.1" 200 -
+2024-12-03 20:26:05,964 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:05] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:26:06,195 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:06] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:26:06,274 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:26:19,087 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:19] "GET / HTTP/1.1" 200 -
+2024-12-03 20:26:19,111 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:19] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:26:19,337 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:19] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:26:19,431 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:26:36,354 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:36] "GET / HTTP/1.1" 200 -
+2024-12-03 20:26:36,380 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:36] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:26:36,601 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:36] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:26:36,695 - INFO - 127.0.0.1 - - [03/Dec/2024 20:26:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:27:50,283 - INFO - 127.0.0.1 - - [03/Dec/2024 20:27:50] "GET / HTTP/1.1" 200 -
+2024-12-03 20:27:50,314 - INFO - 127.0.0.1 - - [03/Dec/2024 20:27:50] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:27:50,536 - INFO - 127.0.0.1 - - [03/Dec/2024 20:27:50] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:27:50,631 - INFO - 127.0.0.1 - - [03/Dec/2024 20:27:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:28:17,487 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:17] "GET / HTTP/1.1" 200 -
+2024-12-03 20:28:17,539 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:17] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:28:17,749 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:17] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:28:17,843 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:28:25,789 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:25] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:28:25,829 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:25] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:28:26,058 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:26] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:28:26,137 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:28:58,019 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:58] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:28:58,019 - INFO - 127.0.0.1 - - [03/Dec/2024 20:28:58] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:30:30,248 - INFO - 127.0.0.1 - - [03/Dec/2024 20:30:30] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:30:30,295 - INFO - 127.0.0.1 - - [03/Dec/2024 20:30:30] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:30:30,491 - INFO - 127.0.0.1 - - [03/Dec/2024 20:30:30] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:30:30,600 - INFO - 127.0.0.1 - - [03/Dec/2024 20:30:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:30:46,431 - INFO - 127.0.0.1 - - [03/Dec/2024 20:30:46] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:30:46,479 - INFO - 127.0.0.1 - - [03/Dec/2024 20:30:46] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:30:46,682 - INFO - 127.0.0.1 - - [03/Dec/2024 20:30:46] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:30:46,789 - INFO - 127.0.0.1 - - [03/Dec/2024 20:30:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:35:40,697 - INFO - 127.0.0.1 - - [03/Dec/2024 20:35:40] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:35:40,725 - INFO - 127.0.0.1 - - [03/Dec/2024 20:35:40] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:35:40,947 - INFO - 127.0.0.1 - - [03/Dec/2024 20:35:40] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:35:41,043 - INFO - 127.0.0.1 - - [03/Dec/2024 20:35:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:35:59,217 - INFO - 127.0.0.1 - - [03/Dec/2024 20:35:59] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:35:59,256 - INFO - 127.0.0.1 - - [03/Dec/2024 20:35:59] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:35:59,452 - INFO - 127.0.0.1 - - [03/Dec/2024 20:35:59] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:35:59,564 - INFO - 127.0.0.1 - - [03/Dec/2024 20:35:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:36:21,810 - INFO - 127.0.0.1 - - [03/Dec/2024 20:36:21] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:36:21,849 - INFO - 127.0.0.1 - - [03/Dec/2024 20:36:21] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:36:22,059 - INFO - 127.0.0.1 - - [03/Dec/2024 20:36:22] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:36:22,170 - INFO - 127.0.0.1 - - [03/Dec/2024 20:36:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:39:21,774 - INFO - 127.0.0.1 - - [03/Dec/2024 20:39:21] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:39:21,805 - INFO - 127.0.0.1 - - [03/Dec/2024 20:39:21] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:39:22,030 - INFO - 127.0.0.1 - - [03/Dec/2024 20:39:22] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:39:22,124 - INFO - 127.0.0.1 - - [03/Dec/2024 20:39:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:40:29,346 - INFO - 127.0.0.1 - - [03/Dec/2024 20:40:29] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:40:29,378 - INFO - 127.0.0.1 - - [03/Dec/2024 20:40:29] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:40:29,600 - INFO - 127.0.0.1 - - [03/Dec/2024 20:40:29] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:40:29,695 - INFO - 127.0.0.1 - - [03/Dec/2024 20:40:29] "GET /static/js/script.js HTTP/1.1" 200 -
+2024-12-03 20:41:10,063 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:10] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:41:10,104 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:10] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:41:10,330 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:10] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:41:10,424 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:41:43,566 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:43] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:41:43,606 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:43] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:41:43,810 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:43] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:41:43,939 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:43] "GET /static/js/script.js HTTP/1.1" 200 -
+2024-12-03 20:41:56,009 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:56] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:41:56,050 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:56] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:41:56,257 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:56] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:41:56,368 - INFO - 127.0.0.1 - - [03/Dec/2024 20:41:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:43:38,111 - INFO - 127.0.0.1 - - [03/Dec/2024 20:43:38] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:43:38,141 - INFO - 127.0.0.1 - - [03/Dec/2024 20:43:38] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:43:38,378 - INFO - 127.0.0.1 - - [03/Dec/2024 20:43:38] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:43:38,456 - INFO - 127.0.0.1 - - [03/Dec/2024 20:43:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:43:45,853 - INFO - 127.0.0.1 - - [03/Dec/2024 20:43:45] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:43:45,853 - INFO - 127.0.0.1 - - [03/Dec/2024 20:43:45] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:44:35,274 - INFO - 127.0.0.1 - - [03/Dec/2024 20:44:35] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:44:35,580 - INFO - 127.0.0.1 - - [03/Dec/2024 20:44:35] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:44:35,629 - INFO - 127.0.0.1 - - [03/Dec/2024 20:44:35] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:44:35,630 - INFO - 127.0.0.1 - - [03/Dec/2024 20:44:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:44:42,573 - INFO - 127.0.0.1 - - [03/Dec/2024 20:44:42] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:44:42,618 - INFO - 127.0.0.1 - - [03/Dec/2024 20:44:42] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:44:42,838 - INFO - 127.0.0.1 - - [03/Dec/2024 20:44:42] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:44:42,934 - INFO - 127.0.0.1 - - [03/Dec/2024 20:44:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:45:50,933 - INFO - 127.0.0.1 - - [03/Dec/2024 20:45:50] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:45:50,985 - INFO - 127.0.0.1 - - [03/Dec/2024 20:45:50] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:45:51,164 - INFO - 127.0.0.1 - - [03/Dec/2024 20:45:51] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:45:51,309 - INFO - 127.0.0.1 - - [03/Dec/2024 20:45:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:45:53,969 - INFO - 127.0.0.1 - - [03/Dec/2024 20:45:53] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:45:54,007 - INFO - 127.0.0.1 - - [03/Dec/2024 20:45:54] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:45:54,233 - INFO - 127.0.0.1 - - [03/Dec/2024 20:45:54] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:45:54,329 - INFO - 127.0.0.1 - - [03/Dec/2024 20:45:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:46:06,184 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:06] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:46:06,222 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:06] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:46:06,425 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:06] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:46:06,536 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:46:39,356 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:39] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:46:39,400 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:39] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:46:39,593 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:39] "GET /static/style/tailwind.css HTTP/1.1" 200 -
+2024-12-03 20:46:39,717 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:46:58,294 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:58] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:46:58,360 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:58] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:46:58,554 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:58] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:46:58,682 - INFO - 127.0.0.1 - - [03/Dec/2024 20:46:58] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:47:21,821 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:21] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:47:21,860 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:21] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:47:22,064 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:22] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:47:22,175 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:47:23,703 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:23] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:47:23,740 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:23] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:47:23,970 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:23] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:47:24,047 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:47:41,989 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:41] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:47:42,025 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:42] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:47:42,255 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:42] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:47:42,349 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:47:55,235 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:55] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:47:55,275 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:55] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:47:55,486 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:55] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:47:55,597 - INFO - 127.0.0.1 - - [03/Dec/2024 20:47:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:48:41,932 - INFO - 127.0.0.1 - - [03/Dec/2024 20:48:41] "[35m[1mGET /calculate HTTP/1.1[0m" 500 -
+2024-12-03 20:48:42,207 - INFO - 127.0.0.1 - - [03/Dec/2024 20:48:42] "GET /calculate?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-03 20:48:42,287 - INFO - 127.0.0.1 - - [03/Dec/2024 20:48:42] "GET /calculate?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-03 20:48:42,618 - INFO - 127.0.0.1 - - [03/Dec/2024 20:48:42] "GET /calculate?__debugger__=yes&cmd=resource&f=console.png&s=u0AEVBFxVPvJoREcAKh7 HTTP/1.1" 200 -
+2024-12-03 20:48:42,873 - INFO - 127.0.0.1 - - [03/Dec/2024 20:48:42] "GET /calculate?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-03 20:50:23,604 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 20:50:23,761 - INFO -  * Restarting with stat
+2024-12-03 20:50:24,666 - WARNING -  * Debugger is active!
+2024-12-03 20:50:24,671 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 20:51:54,289 - INFO - 127.0.0.1 - - [03/Dec/2024 20:51:54] "[35m[1mGET /calculate HTTP/1.1[0m" 500 -
+2024-12-03 20:51:54,426 - INFO - 127.0.0.1 - - [03/Dec/2024 20:51:54] "[36mGET /calculate?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-03 20:51:54,514 - INFO - 127.0.0.1 - - [03/Dec/2024 20:51:54] "[36mGET /calculate?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-03 20:51:54,847 - INFO - 127.0.0.1 - - [03/Dec/2024 20:51:54] "GET /calculate?__debugger__=yes&cmd=resource&f=console.png&s=O594MJwe1cx5eusLu7j5 HTTP/1.1" 200 -
+2024-12-03 20:51:55,115 - INFO - 127.0.0.1 - - [03/Dec/2024 20:51:55] "[36mGET /calculate?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-03 20:52:52,498 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 20:52:52,621 - INFO -  * Restarting with stat
+2024-12-03 20:52:53,664 - WARNING -  * Debugger is active!
+2024-12-03 20:52:53,673 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 20:52:55,094 - INFO - 127.0.0.1 - - [03/Dec/2024 20:52:55] "[35m[1mGET /calculate HTTP/1.1[0m" 500 -
+2024-12-03 20:52:55,200 - INFO - 127.0.0.1 - - [03/Dec/2024 20:52:55] "[36mGET /calculate?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-03 20:52:55,347 - INFO - 127.0.0.1 - - [03/Dec/2024 20:52:55] "[36mGET /calculate?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-03 20:52:55,674 - INFO - 127.0.0.1 - - [03/Dec/2024 20:52:55] "GET /calculate?__debugger__=yes&cmd=resource&f=console.png&s=w45u7H8SBScAzNJi3yfv HTTP/1.1" 200 -
+2024-12-03 20:52:55,941 - INFO - 127.0.0.1 - - [03/Dec/2024 20:52:55] "[36mGET /calculate?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-03 20:53:06,341 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 20:53:06,477 - INFO -  * Restarting with stat
+2024-12-03 20:53:07,509 - WARNING -  * Debugger is active!
+2024-12-03 20:53:07,513 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 20:53:08,570 - INFO - 127.0.0.1 - - [03/Dec/2024 20:53:08] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:53:08,680 - INFO - 127.0.0.1 - - [03/Dec/2024 20:53:08] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:53:08,806 - INFO - 127.0.0.1 - - [03/Dec/2024 20:53:08] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:53:08,932 - INFO - 127.0.0.1 - - [03/Dec/2024 20:53:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:54:08,128 - INFO - 127.0.0.1 - - [03/Dec/2024 20:54:08] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:54:08,434 - INFO - 127.0.0.1 - - [03/Dec/2024 20:54:08] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:54:08,481 - INFO - 127.0.0.1 - - [03/Dec/2024 20:54:08] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:54:08,483 - INFO - 127.0.0.1 - - [03/Dec/2024 20:54:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:54:21,786 - INFO - 127.0.0.1 - - [03/Dec/2024 20:54:21] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:54:21,844 - INFO - 127.0.0.1 - - [03/Dec/2024 20:54:21] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:54:22,034 - INFO - 127.0.0.1 - - [03/Dec/2024 20:54:22] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:54:22,160 - INFO - 127.0.0.1 - - [03/Dec/2024 20:54:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:55:23,824 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:23] "GET /calculate HTTP/1.1" 200 -
+2024-12-03 20:55:23,858 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:23] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:55:24,079 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:24] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:55:24,175 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:55:26,550 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:26] "GET /register HTTP/1.1" 200 -
+2024-12-03 20:55:26,625 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:26] "GET /static/style/Auth.css HTTP/1.1" 200 -
+2024-12-03 20:55:30,309 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:30] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:55:30,619 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:30] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:55:35,329 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:35] "GET /login HTTP/1.1" 200 -
+2024-12-03 20:55:35,375 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:35] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:55:46,442 - ERROR - Invalid login attempt for user elio
+2024-12-03 20:55:46,443 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:46] "POST /login HTTP/1.1" 200 -
+2024-12-03 20:55:46,722 - INFO - 127.0.0.1 - - [03/Dec/2024 20:55:46] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:56:17,074 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 20:56:17,297 - INFO -  * Restarting with stat
+2024-12-03 20:56:18,546 - WARNING -  * Debugger is active!
+2024-12-03 20:56:18,551 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 20:56:18,620 - ERROR - Invalid login attempt for user elio
+2024-12-03 20:56:18,635 - INFO - 127.0.0.1 - - [03/Dec/2024 20:56:18] "POST /login HTTP/1.1" 200 -
+2024-12-03 20:56:18,741 - INFO - 127.0.0.1 - - [03/Dec/2024 20:56:18] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:56:20,164 - ERROR - Invalid login attempt for user elio
+2024-12-03 20:56:20,165 - INFO - 127.0.0.1 - - [03/Dec/2024 20:56:20] "POST /login HTTP/1.1" 200 -
+2024-12-03 20:56:20,476 - INFO - 127.0.0.1 - - [03/Dec/2024 20:56:20] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:57:05,716 - ERROR - Invalid login attempt for user elio
+2024-12-03 20:57:05,724 - INFO - 127.0.0.1 - - [03/Dec/2024 20:57:05] "POST /login HTTP/1.1" 200 -
+2024-12-03 20:57:05,755 - INFO - 127.0.0.1 - - [03/Dec/2024 20:57:05] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:57:37,601 - ERROR - Invalid login attempt for user elio
+2024-12-03 20:57:37,608 - INFO - 127.0.0.1 - - [03/Dec/2024 20:57:37] "POST /login HTTP/1.1" 200 -
+2024-12-03 20:57:37,906 - INFO - 127.0.0.1 - - [03/Dec/2024 20:57:37] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:57:57,960 - ERROR - Invalid login attempt for user elio
+2024-12-03 20:57:57,961 - INFO - 127.0.0.1 - - [03/Dec/2024 20:57:57] "POST /login HTTP/1.1" 200 -
+2024-12-03 20:57:57,985 - INFO - 127.0.0.1 - - [03/Dec/2024 20:57:57] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:58:28,697 - ERROR - Invalid login attempt for user elio
+2024-12-03 20:58:28,719 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:28] "POST /login HTTP/1.1" 200 -
+2024-12-03 20:58:29,009 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:29] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:58:32,913 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:32] "GET /register HTTP/1.1" 200 -
+2024-12-03 20:58:32,959 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:32] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:58:34,933 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:34] "GET /login HTTP/1.1" 200 -
+2024-12-03 20:58:35,237 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:35] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:58:44,424 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 20:58:44,560 - INFO -  * Restarting with stat
+2024-12-03 20:58:45,626 - WARNING -  * Debugger is active!
+2024-12-03 20:58:45,632 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 20:58:51,495 - INFO - User Elio logged in successfully
+2024-12-03 20:58:51,496 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-03 20:58:51,515 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:51] "GET / HTTP/1.1" 200 -
+2024-12-03 20:58:51,636 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:51] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:58:51,871 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:51] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:58:51,872 - INFO - 127.0.0.1 - - [03/Dec/2024 20:58:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:59:02,396 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 20:59:02,559 - INFO -  * Restarting with stat
+2024-12-03 20:59:03,428 - WARNING -  * Debugger is active!
+2024-12-03 20:59:03,434 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 20:59:04,579 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 20:59:04,708 - INFO -  * Restarting with stat
+2024-12-03 20:59:05,548 - WARNING -  * Debugger is active!
+2024-12-03 20:59:05,552 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 20:59:10,637 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:10] "GET / HTTP/1.1" 200 -
+2024-12-03 20:59:10,735 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:10] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 20:59:10,862 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:10] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 20:59:10,987 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:10] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 20:59:19,206 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:19] "GET /login HTTP/1.1" 200 -
+2024-12-03 20:59:19,281 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:19] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:59:22,392 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:22] "GET /register HTTP/1.1" 200 -
+2024-12-03 20:59:22,697 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:22] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 20:59:26,386 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:26] "GET /login HTTP/1.1" 200 -
+2024-12-03 20:59:26,431 - INFO - 127.0.0.1 - - [03/Dec/2024 20:59:26] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:00:06,234 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:00:06,362 - INFO -  * Restarting with stat
+2024-12-03 21:00:07,232 - WARNING -  * Debugger is active!
+2024-12-03 21:00:07,237 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:00:17,803 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:00:17,934 - INFO -  * Restarting with stat
+2024-12-03 21:00:18,790 - WARNING -  * Debugger is active!
+2024-12-03 21:00:18,794 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:00:22,020 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:00:22,155 - INFO -  * Restarting with stat
+2024-12-03 21:00:23,015 - WARNING -  * Debugger is active!
+2024-12-03 21:00:23,019 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:00:26,249 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:00:26,401 - INFO -  * Restarting with stat
+2024-12-03 21:00:27,317 - WARNING -  * Debugger is active!
+2024-12-03 21:00:27,321 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:00:30,539 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:00:30,677 - INFO -  * Restarting with stat
+2024-12-03 21:02:14,328 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 21:02:14,328 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 21:02:14,330 - INFO -  * Restarting with stat
+2024-12-03 21:02:15,208 - WARNING -  * Debugger is active!
+2024-12-03 21:02:15,213 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:02:17,117 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:17] "GET / HTTP/1.1" 200 -
+2024-12-03 21:02:17,237 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:17] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 21:02:17,369 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:17] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 21:02:17,481 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 21:02:20,987 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:20] "GET /login HTTP/1.1" 200 -
+2024-12-03 21:02:21,077 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:21] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:02:27,710 - ERROR - Invalid login attempt for user Elio
+2024-12-03 21:02:27,712 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:27] "POST /login HTTP/1.1" 200 -
+2024-12-03 21:02:27,743 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:27] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:02:35,352 - INFO - User Elio logged in successfully
+2024-12-03 21:02:35,353 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-03 21:02:35,358 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:35] "GET / HTTP/1.1" 200 -
+2024-12-03 21:02:35,388 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:35] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 21:02:35,713 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:35] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 21:02:35,715 - INFO - 127.0.0.1 - - [03/Dec/2024 21:02:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 21:03:29,578 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:03:29,701 - INFO -  * Restarting with stat
+2024-12-03 21:03:30,675 - WARNING -  * Debugger is active!
+2024-12-03 21:03:30,680 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:03:33,888 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:03:34,063 - INFO -  * Restarting with stat
+2024-12-03 21:03:34,912 - WARNING -  * Debugger is active!
+2024-12-03 21:03:34,917 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:03:35,682 - INFO - 127.0.0.1 - - [03/Dec/2024 21:03:35] "GET /login HTTP/1.1" 200 -
+2024-12-03 21:03:35,823 - INFO - 127.0.0.1 - - [03/Dec/2024 21:03:35] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:03:42,625 - INFO - 127.0.0.1 - - [03/Dec/2024 21:03:42] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2024-12-03 21:03:42,655 - INFO - 127.0.0.1 - - [03/Dec/2024 21:03:42] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-03 21:03:42,974 - INFO - 127.0.0.1 - - [03/Dec/2024 21:03:42] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-03 21:03:43,333 - INFO - 127.0.0.1 - - [03/Dec/2024 21:03:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=6HHIOuInF85nBpsAkLHq HTTP/1.1" 200 -
+2024-12-03 21:03:43,586 - INFO - 127.0.0.1 - - [03/Dec/2024 21:03:43] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-03 21:05:50,385 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:05:50,551 - INFO -  * Restarting with stat
+2024-12-03 21:05:51,530 - WARNING -  * Debugger is active!
+2024-12-03 21:05:51,534 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:06:01,050 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:06:01,206 - INFO -  * Restarting with stat
+2024-12-03 21:06:02,095 - WARNING -  * Debugger is active!
+2024-12-03 21:06:02,099 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:06:20,195 - INFO - User Elio logged in successfully
+2024-12-03 21:06:20,197 - INFO - 127.0.0.1 - - [03/Dec/2024 21:06:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-03 21:06:20,208 - INFO - 127.0.0.1 - - [03/Dec/2024 21:06:20] "GET / HTTP/1.1" 200 -
+2024-12-03 21:06:46,086 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:06:46,224 - INFO -  * Restarting with stat
+2024-12-03 21:06:47,203 - WARNING -  * Debugger is active!
+2024-12-03 21:06:47,208 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:06:47,527 - INFO - 127.0.0.1 - - [03/Dec/2024 21:06:47] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-03 21:06:47,645 - INFO - 127.0.0.1 - - [03/Dec/2024 21:06:47] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-03 21:06:47,736 - INFO - 127.0.0.1 - - [03/Dec/2024 21:06:47] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-03 21:06:48,066 - INFO - 127.0.0.1 - - [03/Dec/2024 21:06:48] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Be58wMSoOykvDhG1J2mr HTTP/1.1" 200 -
+2024-12-03 21:06:48,335 - INFO - 127.0.0.1 - - [03/Dec/2024 21:06:48] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-03 21:06:59,827 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:06:59,958 - INFO -  * Restarting with stat
+2024-12-03 21:07:00,824 - WARNING -  * Debugger is active!
+2024-12-03 21:07:00,829 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:07:14,506 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-03 21:07:14,615 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:14] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-03 21:07:14,719 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:14] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-03 21:07:15,056 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:15] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=yM0SdO2D01O7ThHwr0W2 HTTP/1.1" 200 -
+2024-12-03 21:07:15,318 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:15] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-03 21:07:16,879 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:16] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-03 21:07:17,178 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:17] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-03 21:07:17,224 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:17] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-03 21:07:17,541 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:17] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=yM0SdO2D01O7ThHwr0W2 HTTP/1.1[0m" 304 -
+2024-12-03 21:07:17,797 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:17] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-03 21:07:55,345 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:55] "GET / HTTP/1.1" 200 -
+2024-12-03 21:07:55,639 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:55] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-03 21:07:55,689 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:55] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-03 21:07:55,689 - INFO - 127.0.0.1 - - [03/Dec/2024 21:07:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-03 21:09:16,210 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:09:16,326 - INFO -  * Restarting with stat
+2024-12-03 21:27:56,314 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 21:27:56,314 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 21:27:56,317 - INFO -  * Restarting with stat
+2024-12-03 21:27:57,172 - WARNING -  * Debugger is active!
+2024-12-03 21:27:57,176 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:27:58,739 - INFO - 127.0.0.1 - - [03/Dec/2024 21:27:58] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:27:59,057 - INFO - 127.0.0.1 - - [03/Dec/2024 21:27:59] "GET /static/style/Auth.css HTTP/1.1" 200 -
+2024-12-03 21:28:00,976 - INFO - 127.0.0.1 - - [03/Dec/2024 21:28:00] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-03 21:28:17,739 - INFO - 127.0.0.1 - - [03/Dec/2024 21:28:17] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-12-03 21:28:17,991 - INFO - 127.0.0.1 - - [03/Dec/2024 21:28:17] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:28:18,055 - INFO - 127.0.0.1 - - [03/Dec/2024 21:28:18] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:28:48,545 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:28:48,687 - INFO -  * Restarting with stat
+2024-12-03 21:28:49,682 - WARNING -  * Debugger is active!
+2024-12-03 21:28:49,687 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:28:50,813 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:28:50,988 - INFO -  * Restarting with stat
+2024-12-03 21:28:51,851 - WARNING -  * Debugger is active!
+2024-12-03 21:28:51,855 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:28:58,289 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:28:58,495 - INFO -  * Restarting with stat
+2024-12-03 21:28:59,413 - WARNING -  * Debugger is active!
+2024-12-03 21:28:59,418 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:29:03,684 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:29:03,823 - INFO -  * Restarting with stat
+2024-12-03 21:29:09,564 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 21:29:09,565 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 21:29:09,567 - INFO -  * Restarting with stat
+2024-12-03 21:29:10,396 - WARNING -  * Debugger is active!
+2024-12-03 21:29:10,400 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:29:13,544 - INFO - 127.0.0.1 - - [03/Dec/2024 21:29:13] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:29:13,887 - INFO - 127.0.0.1 - - [03/Dec/2024 21:29:13] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:29:24,987 - INFO - 127.0.0.1 - - [03/Dec/2024 21:29:24] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-12-03 21:29:25,302 - INFO - 127.0.0.1 - - [03/Dec/2024 21:29:25] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:29:25,570 - INFO - 127.0.0.1 - - [03/Dec/2024 21:29:25] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:30:13,573 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:30:13,775 - INFO -  * Restarting with stat
+2024-12-03 21:30:15,163 - WARNING -  * Debugger is active!
+2024-12-03 21:30:15,170 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:30:20,528 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:30:20,665 - INFO -  * Restarting with stat
+2024-12-03 21:30:21,474 - WARNING -  * Debugger is active!
+2024-12-03 21:30:21,479 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:30:37,266 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:30:37,415 - INFO -  * Restarting with stat
+2024-12-03 21:30:38,270 - WARNING -  * Debugger is active!
+2024-12-03 21:30:38,274 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:30:43,637 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:30:43,778 - INFO -  * Restarting with stat
+2024-12-03 21:30:44,723 - WARNING -  * Debugger is active!
+2024-12-03 21:30:44,727 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:30:50,034 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:30:50,156 - INFO -  * Restarting with stat
+2024-12-03 21:30:50,987 - WARNING -  * Debugger is active!
+2024-12-03 21:30:50,991 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:08,948 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:09,077 - INFO -  * Restarting with stat
+2024-12-03 21:31:09,962 - WARNING -  * Debugger is active!
+2024-12-03 21:31:09,967 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:13,180 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:13,316 - INFO -  * Restarting with stat
+2024-12-03 21:31:14,177 - WARNING -  * Debugger is active!
+2024-12-03 21:31:14,182 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:17,400 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:17,514 - INFO -  * Restarting with stat
+2024-12-03 21:31:18,396 - WARNING -  * Debugger is active!
+2024-12-03 21:31:18,400 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:20,692 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:20,855 - INFO -  * Restarting with stat
+2024-12-03 21:31:21,761 - WARNING -  * Debugger is active!
+2024-12-03 21:31:21,766 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:27,061 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:27,198 - INFO -  * Restarting with stat
+2024-12-03 21:31:28,139 - WARNING -  * Debugger is active!
+2024-12-03 21:31:28,144 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:30,347 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:30,482 - INFO -  * Restarting with stat
+2024-12-03 21:31:31,372 - WARNING -  * Debugger is active!
+2024-12-03 21:31:31,377 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:34,616 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:34,749 - INFO -  * Restarting with stat
+2024-12-03 21:31:35,591 - WARNING -  * Debugger is active!
+2024-12-03 21:31:35,596 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:36,726 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:36,851 - INFO -  * Restarting with stat
+2024-12-03 21:31:37,657 - WARNING -  * Debugger is active!
+2024-12-03 21:31:37,661 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:42,970 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:43,099 - INFO -  * Restarting with stat
+2024-12-03 21:31:43,901 - WARNING -  * Debugger is active!
+2024-12-03 21:31:43,905 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:47,121 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:47,271 - INFO -  * Restarting with stat
+2024-12-03 21:31:48,104 - WARNING -  * Debugger is active!
+2024-12-03 21:31:48,108 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:52,386 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:52,499 - INFO -  * Restarting with stat
+2024-12-03 21:31:53,346 - WARNING -  * Debugger is active!
+2024-12-03 21:31:53,350 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:56,614 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:56,751 - INFO -  * Restarting with stat
+2024-12-03 21:31:57,609 - WARNING -  * Debugger is active!
+2024-12-03 21:31:57,615 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:31:59,786 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:31:59,921 - INFO -  * Restarting with stat
+2024-12-03 21:32:00,804 - WARNING -  * Debugger is active!
+2024-12-03 21:32:00,808 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:32:01,936 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:32:02,069 - INFO -  * Restarting with stat
+2024-12-03 21:32:02,920 - WARNING -  * Debugger is active!
+2024-12-03 21:32:02,925 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:32:07,222 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:32:07,360 - INFO -  * Restarting with stat
+2024-12-03 21:32:08,217 - WARNING -  * Debugger is active!
+2024-12-03 21:32:08,225 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:33:26,977 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:33:27,130 - INFO -  * Restarting with stat
+2024-12-03 21:33:28,047 - WARNING -  * Debugger is active!
+2024-12-03 21:33:28,051 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:33:35,481 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:33:35,610 - INFO -  * Restarting with stat
+2024-12-03 21:33:36,468 - WARNING -  * Debugger is active!
+2024-12-03 21:33:36,472 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:33:39,701 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:33:39,844 - INFO -  * Restarting with stat
+2024-12-03 21:33:40,754 - WARNING -  * Debugger is active!
+2024-12-03 21:33:40,759 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:33:43,993 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:33:44,125 - INFO -  * Restarting with stat
+2024-12-03 21:33:45,018 - WARNING -  * Debugger is active!
+2024-12-03 21:33:45,022 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:33:48,288 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:33:48,405 - INFO -  * Restarting with stat
+2024-12-03 21:33:49,292 - WARNING -  * Debugger is active!
+2024-12-03 21:33:49,299 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:33:50,436 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-03 21:33:50,574 - INFO -  * Restarting with stat
+2024-12-03 21:33:51,644 - WARNING -  * Debugger is active!
+2024-12-03 21:33:51,649 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:34:47,319 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:34:47,436 - INFO -  * Restarting with stat
+2024-12-03 21:34:48,492 - WARNING -  * Debugger is active!
+2024-12-03 21:34:48,496 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:34:58,043 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:34:58,242 - INFO -  * Restarting with stat
+2024-12-03 21:34:59,102 - WARNING -  * Debugger is active!
+2024-12-03 21:34:59,107 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:35:02,316 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-03 21:35:02,463 - INFO -  * Restarting with stat
+2024-12-03 21:36:36,354 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-03 21:36:36,354 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-03 21:36:36,356 - INFO -  * Restarting with stat
+2024-12-03 21:36:37,185 - WARNING -  * Debugger is active!
+2024-12-03 21:36:37,190 - INFO -  * Debugger PIN: 355-610-236
+2024-12-03 21:36:40,811 - INFO - 127.0.0.1 - - [03/Dec/2024 21:36:40] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:36:41,136 - INFO - 127.0.0.1 - - [03/Dec/2024 21:36:41] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:37:18,039 - INFO - 127.0.0.1 - - [03/Dec/2024 21:37:18] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:37:18,372 - INFO - 127.0.0.1 - - [03/Dec/2024 21:37:18] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:37:58,210 - INFO - 127.0.0.1 - - [03/Dec/2024 21:37:58] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:37:58,582 - INFO - 127.0.0.1 - - [03/Dec/2024 21:37:58] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:38:16,280 - INFO - 127.0.0.1 - - [03/Dec/2024 21:38:16] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:38:16,632 - INFO - 127.0.0.1 - - [03/Dec/2024 21:38:16] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:38:40,520 - INFO - 127.0.0.1 - - [03/Dec/2024 21:38:40] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-12-03 21:38:40,833 - INFO - 127.0.0.1 - - [03/Dec/2024 21:38:40] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:38:41,101 - INFO - 127.0.0.1 - - [03/Dec/2024 21:38:41] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:40:28,436 - INFO - 127.0.0.1 - - [03/Dec/2024 21:40:28] "GET /register HTTP/1.1" 200 -
+2024-12-03 21:40:28,705 - INFO - 127.0.0.1 - - [03/Dec/2024 21:40:28] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-03 21:47:08,470 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-03 21:50:01,577 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\tables.py', reloading
+2024-12-03 21:50:01,759 - INFO -  * Restarting with stat
+2024-12-03 21:56:38,690 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-03 22:03:00,408 - ERROR - Error: Path doesn't exist: 'C:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-12-03 22:03:17,120 - ERROR - Error: Path doesn't exist: 'C:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-12-03 22:03:25,307 - ERROR - Error: Path doesn't exist: 'C:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-12-03 22:03:31,883 - ERROR - Error: Path doesn't exist: 'C:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-12-03 22:03:39,006 - ERROR - Error: Path doesn't exist: 'C:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-12-03 22:03:52,773 - ERROR - Error: Path doesn't exist: 'C:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\migrations'.  Please use the 'init' command to create a new scripts folder.
+2024-12-03 22:08:32,701 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-04 18:36:49,476 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-04 18:36:49,476 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-04 18:36:49,479 - INFO -  * Restarting with stat
+2024-12-04 18:36:50,332 - WARNING -  * Debugger is active!
+2024-12-04 18:36:50,337 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:36:58,291 - INFO - 127.0.0.1 - - [04/Dec/2024 18:36:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-04 18:36:58,436 - INFO - 127.0.0.1 - - [04/Dec/2024 18:36:58] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-04 18:36:58,461 - INFO - 127.0.0.1 - - [04/Dec/2024 18:36:58] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-04 18:36:58,852 - INFO - 127.0.0.1 - - [04/Dec/2024 18:36:58] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=9os0VYOg0JzHLTRfZWVk HTTP/1.1" 200 -
+2024-12-04 18:36:59,118 - INFO - 127.0.0.1 - - [04/Dec/2024 18:36:59] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-04 18:38:25,470 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-04 18:38:33,238 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-04 18:43:49,039 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-04 18:44:11,342 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-04 18:47:34,463 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 18:47:34,596 - INFO -  * Restarting with stat
+2024-12-04 18:48:24,372 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-04 18:49:35,902 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-04 18:51:52,878 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-04 18:51:52,878 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-04 18:51:52,879 - INFO -  * Restarting with stat
+2024-12-04 18:51:53,756 - WARNING -  * Debugger is active!
+2024-12-04 18:51:53,760 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:51:56,028 - INFO - 127.0.0.1 - - [04/Dec/2024 18:51:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-04 18:51:56,170 - INFO - 127.0.0.1 - - [04/Dec/2024 18:51:56] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-04 18:51:56,257 - INFO - 127.0.0.1 - - [04/Dec/2024 18:51:56] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-04 18:51:56,635 - INFO - 127.0.0.1 - - [04/Dec/2024 18:51:56] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=QsGy6VUbwQpN2iyzNKTQ HTTP/1.1" 200 -
+2024-12-04 18:51:56,873 - INFO - 127.0.0.1 - - [04/Dec/2024 18:51:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-04 18:53:37,577 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 18:53:37,817 - INFO -  * Restarting with stat
+2024-12-04 18:53:38,765 - WARNING -  * Debugger is active!
+2024-12-04 18:53:38,772 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:53:39,961 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 18:53:40,164 - INFO -  * Restarting with stat
+2024-12-04 18:53:41,202 - WARNING -  * Debugger is active!
+2024-12-04 18:53:41,207 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:53:48,702 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 18:53:48,883 - INFO -  * Restarting with stat
+2024-12-04 18:53:49,753 - WARNING -  * Debugger is active!
+2024-12-04 18:53:49,757 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:54:01,430 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 18:54:01,559 - INFO -  * Restarting with stat
+2024-12-04 18:54:02,605 - WARNING -  * Debugger is active!
+2024-12-04 18:54:02,610 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:54:08,347 - INFO - 127.0.0.1 - - [04/Dec/2024 18:54:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-04 18:54:08,448 - INFO - 127.0.0.1 - - [04/Dec/2024 18:54:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-04 18:54:08,575 - INFO - 127.0.0.1 - - [04/Dec/2024 18:54:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-04 18:54:08,903 - INFO - 127.0.0.1 - - [04/Dec/2024 18:54:08] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=QPtWVIU0xS2KCLlQnKME HTTP/1.1" 200 -
+2024-12-04 18:54:09,171 - INFO - 127.0.0.1 - - [04/Dec/2024 18:54:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-04 18:54:29,012 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\tables.py', reloading
+2024-12-04 18:54:29,149 - INFO -  * Restarting with stat
+2024-12-04 18:54:34,705 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-04 18:54:34,706 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-04 18:54:34,708 - INFO -  * Restarting with stat
+2024-12-04 18:54:35,601 - WARNING -  * Debugger is active!
+2024-12-04 18:54:35,606 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:54:54,554 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\tables.py', reloading
+2024-12-04 18:54:54,705 - INFO -  * Restarting with stat
+2024-12-04 18:54:55,637 - WARNING -  * Debugger is active!
+2024-12-04 18:54:55,643 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:54:59,948 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\tables.py', reloading
+2024-12-04 18:55:00,115 - INFO -  * Restarting with stat
+2024-12-04 18:55:06,305 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-04 18:55:06,305 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-04 18:55:06,307 - INFO -  * Restarting with stat
+2024-12-04 18:55:07,209 - WARNING -  * Debugger is active!
+2024-12-04 18:55:07,217 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:55:08,922 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:08] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-04 18:55:09,034 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:09] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-04 18:55:09,160 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:09] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-04 18:55:09,490 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:09] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=1wdNcgW14M7oaJQ9fUT8 HTTP/1.1" 200 -
+2024-12-04 18:55:09,755 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:09] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-04 18:55:22,037 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\classes.py', reloading
+2024-12-04 18:55:22,192 - INFO -  * Restarting with stat
+2024-12-04 18:55:23,081 - WARNING -  * Debugger is active!
+2024-12-04 18:55:23,086 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:55:30,539 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 18:55:30,701 - INFO -  * Restarting with stat
+2024-12-04 18:55:51,296 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-04 18:55:51,296 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-04 18:55:51,297 - INFO -  * Restarting with stat
+2024-12-04 18:55:52,197 - WARNING -  * Debugger is active!
+2024-12-04 18:55:52,205 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 18:55:55,327 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:55] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2024-12-04 18:55:55,443 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:55] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-04 18:55:55,546 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:55] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-04 18:55:55,889 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:55] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=Li1SvVCvDE5iZ9KGMwuU HTTP/1.1" 200 -
+2024-12-04 18:55:56,140 - INFO - 127.0.0.1 - - [04/Dec/2024 18:55:56] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-04 18:57:24,455 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-04 18:58:19,681 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\migrations\\env.py', reloading
+2024-12-04 18:58:19,849 - INFO -  * Restarting with stat
+2024-12-04 18:58:21,328 - WARNING -  * Debugger is active!
+2024-12-04 18:58:21,334 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 19:00:01,729 - ERROR - Error: Directory migrations already exists and is not empty
+2024-12-04 19:02:59,379 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\migrations\\env.py', reloading
+2024-12-04 19:02:59,543 - INFO -  * Restarting with stat
+2024-12-04 19:03:01,070 - WARNING -  * Debugger is active!
+2024-12-04 19:03:01,076 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 19:05:06,436 - INFO - 127.0.0.1 - - [04/Dec/2024 19:05:06] "GET / HTTP/1.1" 200 -
+2024-12-04 19:05:06,552 - INFO - 127.0.0.1 - - [04/Dec/2024 19:05:06] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-04 19:05:06,670 - INFO - 127.0.0.1 - - [04/Dec/2024 19:05:06] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-04 19:05:06,827 - INFO - 127.0.0.1 - - [04/Dec/2024 19:05:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-04 19:05:07,157 - INFO - 127.0.0.1 - - [04/Dec/2024 19:05:07] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2024-12-04 19:05:47,760 - INFO - 127.0.0.1 - - [04/Dec/2024 19:05:47] "GET / HTTP/1.1" 200 -
+2024-12-04 19:05:48,060 - INFO - 127.0.0.1 - - [04/Dec/2024 19:05:48] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-04 19:05:48,110 - INFO - 127.0.0.1 - - [04/Dec/2024 19:05:48] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-04 19:05:48,111 - INFO - 127.0.0.1 - - [04/Dec/2024 19:05:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-04 19:06:12,800 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:12] "GET / HTTP/1.1" 200 -
+2024-12-04 19:06:12,835 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:12] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-04 19:06:13,062 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:13] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-04 19:06:13,156 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-04 19:06:44,500 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:44] "GET /login HTTP/1.1" 200 -
+2024-12-04 19:06:44,574 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:44] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-04 19:06:52,718 - ERROR - Invalid login attempt for user elio
+2024-12-04 19:06:52,721 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:52] "POST /login HTTP/1.1" 200 -
+2024-12-04 19:06:53,020 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:53] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-04 19:06:57,401 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:57] "GET /register HTTP/1.1" 200 -
+2024-12-04 19:06:57,475 - INFO - 127.0.0.1 - - [04/Dec/2024 19:06:57] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-04 19:07:14,053 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:14] "[32mPOST /register HTTP/1.1[0m" 302 -
+2024-12-04 19:07:14,080 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:14] "GET /login HTTP/1.1" 200 -
+2024-12-04 19:07:14,440 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:14] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-04 19:07:22,875 - ERROR - Invalid login attempt for user elio
+2024-12-04 19:07:22,877 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:22] "POST /login HTTP/1.1" 200 -
+2024-12-04 19:07:23,183 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:23] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-04 19:07:29,390 - INFO - User Elio logged in successfully
+2024-12-04 19:07:29,391 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:29] "[32mPOST /login HTTP/1.1[0m" 302 -
+2024-12-04 19:07:29,397 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:29] "GET / HTTP/1.1" 200 -
+2024-12-04 19:07:29,432 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:29] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-04 19:07:29,751 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:29] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-04 19:07:29,751 - INFO - 127.0.0.1 - - [04/Dec/2024 19:07:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-04 19:10:46,440 - INFO - 127.0.0.1 - - [04/Dec/2024 19:10:46] "GET /login HTTP/1.1" 200 -
+2024-12-04 19:10:46,533 - INFO - 127.0.0.1 - - [04/Dec/2024 19:10:46] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-04 19:10:48,961 - INFO - 127.0.0.1 - - [04/Dec/2024 19:10:48] "GET /login HTTP/1.1" 200 -
+2024-12-04 19:10:49,264 - INFO - 127.0.0.1 - - [04/Dec/2024 19:10:49] "[36mGET /static/style/Auth.css HTTP/1.1[0m" 304 -
+2024-12-04 19:10:52,419 - INFO - 127.0.0.1 - - [04/Dec/2024 19:10:52] "GET / HTTP/1.1" 200 -
+2024-12-04 19:10:52,469 - INFO - 127.0.0.1 - - [04/Dec/2024 19:10:52] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-04 19:10:52,670 - INFO - 127.0.0.1 - - [04/Dec/2024 19:10:52] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-04 19:10:52,783 - INFO - 127.0.0.1 - - [04/Dec/2024 19:10:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-04 19:11:47,218 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 19:11:47,467 - INFO -  * Restarting with stat
+2024-12-04 19:11:48,554 - WARNING -  * Debugger is active!
+2024-12-04 19:11:48,563 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 19:11:52,877 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 19:11:53,033 - INFO -  * Restarting with stat
+2024-12-04 19:12:56,607 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-12-04 19:12:56,607 - INFO - [33mPress CTRL+C to quit[0m
+2024-12-04 19:12:56,609 - INFO -  * Restarting with stat
+2024-12-04 19:12:57,515 - WARNING -  * Debugger is active!
+2024-12-04 19:12:57,520 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 19:12:59,624 - INFO - 127.0.0.1 - - [04/Dec/2024 19:12:59] "GET / HTTP/1.1" 200 -
+2024-12-04 19:12:59,757 - INFO - 127.0.0.1 - - [04/Dec/2024 19:12:59] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-04 19:12:59,847 - INFO - 127.0.0.1 - - [04/Dec/2024 19:12:59] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-04 19:12:59,986 - INFO - 127.0.0.1 - - [04/Dec/2024 19:12:59] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-04 19:13:02,300 - INFO - 127.0.0.1 - - [04/Dec/2024 19:13:02] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+2024-12-04 19:13:02,354 - INFO - 127.0.0.1 - - [04/Dec/2024 19:13:02] "GET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2024-12-04 19:13:02,522 - INFO - 127.0.0.1 - - [04/Dec/2024 19:13:02] "GET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2024-12-04 19:13:02,879 - INFO - 127.0.0.1 - - [04/Dec/2024 19:13:02] "GET /logout?__debugger__=yes&cmd=resource&f=console.png&s=bEbumD6NlMrlmsZ0ioSi HTTP/1.1" 200 -
+2024-12-04 19:13:03,141 - INFO - 127.0.0.1 - - [04/Dec/2024 19:13:03] "GET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2024-12-04 19:14:09,945 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 19:14:10,178 - INFO -  * Restarting with stat
+2024-12-04 19:14:11,135 - WARNING -  * Debugger is active!
+2024-12-04 19:14:11,141 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 19:14:12,344 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:12] "[35m[1mGET /logout HTTP/1.1[0m" 500 -
+2024-12-04 19:14:12,453 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:12] "[36mGET /logout?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2024-12-04 19:14:12,570 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:12] "[36mGET /logout?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2024-12-04 19:14:12,894 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:12] "GET /logout?__debugger__=yes&cmd=resource&f=console.png&s=TMQinAWiW3xI2ftOs9Xq HTTP/1.1" 200 -
+2024-12-04 19:14:13,160 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:13] "[36mGET /logout?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2024-12-04 19:14:30,144 - INFO -  * Detected change in 'c:\\Users\\ASUS\\Desktop\\New folder\\Computer_Program_Assignment\\app.py', reloading
+2024-12-04 19:14:30,294 - INFO -  * Restarting with stat
+2024-12-04 19:14:31,447 - WARNING -  * Debugger is active!
+2024-12-04 19:14:31,452 - INFO -  * Debugger PIN: 355-610-236
+2024-12-04 19:14:32,250 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:32] "[32mGET /logout HTTP/1.1[0m" 302 -
+2024-12-04 19:14:32,285 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:32] "GET / HTTP/1.1" 200 -
+2024-12-04 19:14:32,565 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:32] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-04 19:14:32,649 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:32] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-04 19:14:32,649 - INFO - 127.0.0.1 - - [04/Dec/2024 19:14:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+2024-12-04 19:18:22,832 - INFO - 127.0.0.1 - - [04/Dec/2024 19:18:22] "GET / HTTP/1.1" 200 -
+2024-12-04 19:18:22,860 - INFO - 127.0.0.1 - - [04/Dec/2024 19:18:22] "[36mGET /static/style/main.css HTTP/1.1[0m" 304 -
+2024-12-04 19:18:23,098 - INFO - 127.0.0.1 - - [04/Dec/2024 19:18:23] "[36mGET /static/style/tailwind.css HTTP/1.1[0m" 304 -
+2024-12-04 19:18:23,175 - INFO - 127.0.0.1 - - [04/Dec/2024 19:18:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -

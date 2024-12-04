@@ -1,58 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style/Auth.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/css/iziToast.min.css"
+    />
+    {% block head %} {% endblock %}
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static', filename='style/Auth.css') }}" />
-  {% block head %}
-
-  {% endblock %}
-</head>
-
-<body>
-  <!-- {% include 'dashboard/partials/header.html' %} -->
-  {% block body %}
-
-  {% endblock %}
-
-  {% with messages = get_flashed_messages(with_categories=true) %}
-  {% if messages %}
-  {% for category, message in messages %}
-  <script>
-    {% if category == 'success' %}
-    iziToast.success({
-      title: 'Success',
-      message: '{{ message }}',
-      position: 'topRight',
-      timeout: 3000
-    });
-    {% elif category == 'danger' %}
-    iziToast.error({
-      title: 'Error',
-      message: '{{ message }}',
-      position: 'topRight',
-      timeout: 3000
-    });
-    {% elif category == 'info' %}
-    iziToast.info({
-      title: 'Info',
-      message: '{{ message }}',
-      position: 'topRight',
-      timeout: 3000
-    });
-    {% elif category == 'warning' %}
-    iziToast.warning({
-      title: 'Warning',
-      message: '{{ message }}',
-      position: 'topRight',
-      timeout: 3000
-    });
-    {% endif %}
-  </script>
-  {% endfor %}
-  {% endif %}
-  {% endwith %}
-</body>
-
+  <body>
+    {% block body %} {% endblock %} {% include 'dashboard/partials/flasher.html'
+    %}
+  </body>
 </html>

@@ -1,31 +1,46 @@
-{% extends 'Auth/base.html' %}
-
-{% block head %}
+{% extends 'Auth/base.html' %} {% block head %}
 <title>test</title>
-{% endblock %}
-
-{% block body %}
+{% endblock %} {% block body %}
 <div class="login-box">
   <h2>Register</h2>
   <form action="{{ url_for('register') }}" method="POST">
     <div class="user-box">
-      <input type="email" name="email" required="">
+      <input
+        type="text"
+        name="email"
+        required=""
+        value="{{ request.form.get('email') }}"
+      />
       <label>Email</label>
     </div>
     <div class="user-box">
-      <input type="text" name="username" required="">
+      <input
+        type="text"
+        name="username"
+        required=""
+        value="{{ request.form.get('username') }}"
+      />
       <label>Username</label>
     </div>
     <div class="user-box">
-      <input type="password" name="password" required="">
+      <input
+        type="text"
+        name="company_name"
+        required=""
+        value="{{ request.form.get('username') }}"
+      />
+      <label>campany name</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" required="" />
       <label>Password</label>
     </div>
     <div class="user-box">
-      <input type="password" name="" required="">
+      <input type="password" name="re_password" required="" />
       <label>re-Password</label>
     </div>
     <div class="">
-      <input class="login-button" type="submit" name="" value="Register">
+      <input class="login-button" type="submit" name="" value="Register" />
     </div>
     <a href="{{ url_for('login') }}">Login</a>
   </form>
