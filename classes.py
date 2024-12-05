@@ -14,7 +14,7 @@ def final_energy(electricity_bill, natural_gas, fuel_bill):
   return electricity + gas + fuel
 
 def final_waste(waste_generate, waste_recycle):
-  co2_from_waste = waste_generate * 12 * (0.57 - waste_recycle)
+  co2_from_waste = waste_generate * 12 * (0.57 - (waste_recycle/100))
   return co2_from_waste
 
 def final_travel(km_travel, fuel_effeciency):

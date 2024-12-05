@@ -32,6 +32,7 @@ class User(db.Model, UserMixin):
 class SingleValue(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'), nullable=True)
+    unique_id = db.Column(db.String(40), nullable=True)
     company_name = db.Column(db.String(250), nullable=False, unique=True)
     electricity_bill = db.Column(db.Float, nullable=False)
     gas_bill = db.Column(db.Float, nullable=False)

@@ -1,10 +1,11 @@
-from flask import Flask, render_template, url_for, request, redirect, flash
+from flask import Flask, render_template, url_for, request, redirect, flash,make_response
 from flask_migrate import Migrate
 from extensions import db, bcrypt
 from tables import User, SingleValue, FinalValues
 import classes
 import logging
 from flask_login import LoginManager, UserMixin, login_user, logout_user, current_user
+import uuid
 
 
 app = Flask(__name__)
@@ -35,7 +36,6 @@ logging.basicConfig(filename='app.log', level=logging.DEBUG,
 def load_user(user_id):
     return User.query.get(int(user_id))  # Fetch user by ID
 
-# Routes
 @app.route('/')
 def index():
     if current_user.is_authenticated:
@@ -46,11 +46,16 @@ def index():
 
 @app.route('/calculate', methods=['GET', 'POST'])
 def calculate():
-   
+       
     if request.method == 'GET':
         return render_template('dashboard/create.html')
     else:
-        
+        user_id = request.cookies.get('user_id')
+        if not user_id:
+            unique_id = str(uuid.uuid4())
+            response = make_response(render_template('dashboard/create.html'))
+            response.set_cookie('user_id', unique_id, max_age=60*60*24*365)  # Setting the cookie
+            return response
         try:
             electricity_bill = float(request.form.get('electricity_bill', 0))
             gas_bill = float(request.form.get('gas_bill', 0))
@@ -80,11 +85,11 @@ def calculate():
                     yearly_travel=yearly_travel,
                     fuel_usage=fuel_usage,
                     company_name=company_name,
+                    unique_id=unique_id,
                     user_id=current_user.id if current_user.is_authenticated else None
                 )
-            # energy_usage = db.Column(db.Float, nullable=False)
-            # waste = db.Column(db.Float, nullable=False)
-            # business_travel = db.Column(db.Float, nullable=False)
+            
+            response.set_cookie('user_id', unique_id)
             
             energy_usage = classes.final_energy(electricity_bill, gas_bill,fuel_bill)
             waste = classes.final_waste(waste_generate,recycled_waste)
@@ -160,6 +165,23 @@ def register():
         return redirect(url_for('login'))
     return render_template('Auth/register.html')
 
+@app.route('/overview', methods=['GET'])
+def overview():
+    # response = make_response(render_template('dashboard/create.html'))
+    # response.set_cookie('user_id', 'c55076-ed2c-41a1-821a-f6fae8c7ff12', max_age=60*60*24*365)  # Setting the cookie
+    # return response
+    try:
+        user_id = request.cookies.get('user_id')
+        single_recoreds = SingleValue.query.all()
+        final_recoreds = FinalValues.query.all()
+        app.logger.debug(f"Final Records: {final_recoreds}")
+
+        return render_template('dashboard/overview.html', single=single_recoreds, final=final_recoreds, user_id=user_id)
+    except Exception as ex:
+        app.logger.error(f'Error Fetching Records: {ex}')
+        flash(f'Error accured: {ex}')
+        return redirect('/')
+    
 
 @app.route('/logout')
 def logout():

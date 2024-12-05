@@ -5,4 +5,4 @@ instance/
 migration/
 app.db
 node_modules/
-
+app.log

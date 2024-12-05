@@ -1,0 +1,46 @@
+{% extends 'dashboard/base.html' %} {% block head %}
+<title>Carbon FootPrint</title>
+{% endblock %} {% block body %}
+
+<section class="bg-gray-50 dark:bg-gray-900 mt-20 text-lime-50">
+  <div
+    class="bg-gray-100 rounded-lg dark:bg-gray-800 py-8 px-4 mx-auto max-w-screen-xl"
+  >
+    <h1>{{ user_id }}</h1>
+    <h2>single values:</h2>
+    {% for record in single %}
+    <tr>
+      <td>{{ record.id }}</td>
+      <td>{{ record.company_name }}</td>
+      <td>{{ record.electricity_bill }}</td>
+      <td>{{ record.gas_bill }}</td>
+      <td>{{ record.fuel_bill }}</td>
+      <td>{{ record.waste_generate }}</td>
+      <td>{{ record.recycled_waste }}</td>
+      <td>{{ record.yearly_travel }}</td>
+      <td>{{ record.fuel_usage }}</td>
+      <td>{{ record.unique_id }}</td>
+
+      <!-- Add other fields -->
+    </tr>
+    {% endfor %}
+    <h2>final values:</h2>
+    {% for key in final %}
+    <table
+      class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+    >
+      <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+        <td class="px-6 py-4">{{ key.id }}</td>
+        <!-- <td>{{ key.single_value }}</td> -->
+        <td class="px-6 py-4">{{ key.energy_usage }}</td>
+        <td class="px-6 py-4">{{ key.waste }}</td>
+        <td class="px-6 py-4">{{ key.business_travel }}</td>
+
+        <!-- Add other fields -->
+      </tr>
+    </table>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

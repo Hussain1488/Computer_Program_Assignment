@@ -16,6 +16,11 @@
       class="text-sm text-gray-500 dark:text-white hover:underline"
       >Calculate</a
     >
+    <a
+      href="{{ url_for('overview') }}"
+      class="text-sm text-gray-500 dark:text-white hover:underline"
+      >Overview</a
+    >
     {% if current_user.is_authenticated %}
     <span>Welcome, {{ current_user.username }}</span>
     <a href="{{ url_for('logout') }}">Logout</a>
