@@ -50,8 +50,8 @@ def calculate():
     if request.method == 'GET':
         return render_template('dashboard/create.html')
     else:
-        user_id = request.cookies.get('user_id')
-        if not user_id:
+        unique_id = request.cookies.get('user_id')
+        if not unique_id:
             unique_id = str(uuid.uuid4())
             response = make_response(render_template('dashboard/create.html'))
             response.set_cookie('user_id', unique_id, max_age=60*60*24*365)  # Setting the cookie
@@ -89,7 +89,6 @@ def calculate():
                     user_id=current_user.id if current_user.is_authenticated else None
                 )
             
-            response.set_cookie('user_id', unique_id)
             
             energy_usage = classes.final_energy(electricity_bill, gas_bill,fuel_bill)
             waste = classes.final_waste(waste_generate,recycled_waste)
@@ -167,16 +166,32 @@ def register():
 
 @app.route('/overview', methods=['GET'])
 def overview():
-    # response = make_response(render_template('dashboard/create.html'))
-    # response.set_cookie('user_id', 'c55076-ed2c-41a1-821a-f6fae8c7ff12', max_age=60*60*24*365)  # Setting the cookie
-    # return response
     try:
-        user_id = request.cookies.get('user_id')
-        single_recoreds = SingleValue.query.all()
-        final_recoreds = FinalValues.query.all()
-        app.logger.debug(f"Final Records: {final_recoreds}")
+        if current_user.is_authenticated:
+            user_id = current_user.id
+        unique_id = request.cookies.get('user_id')
+        if user_id:
+            user_single_records = SingleValue.query.filter_by(user_id=user_id).first()
+        elif unique_id:
+            user_single_records = SingleValue.query.filter_by(unique_id=unique_id).first()
+        else:
+            user_single_records = []
+        if user_single_records:
+            user_final_records = FinalValues.query.filter_by(single_id=user_single_records.id).first()
 
-        return render_template('dashboard/overview.html', single=single_recoreds, final=final_recoreds, user_id=user_id)
+        user_id = request.cookies.get('user_id')
+        single = SingleValue.query.all()
+        final = FinalValues.query.all()
+        # app.logger.debug(f"Final Records: {final}")
+        
+        # return single_recoreds
+
+        return render_template('dashboard/overview.html',
+                               user_single=user_single_records, 
+                               user_final=user_final_records, 
+                               single=single, 
+                               final=final, 
+                               user_id=user_id)
     except Exception as ex:
         app.logger.error(f'Error Fetching Records: {ex}')
         flash(f'Error accured: {ex}')

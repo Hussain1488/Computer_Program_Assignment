@@ -8,7 +8,7 @@
   >
     <h1>{{ user_id }}</h1>
     <h2>single values:</h2>
-    {% for record in single %}
+    {{ user_single }} {{ user_final }} {% for record in single %}
     <tr>
       <td>{{ record.id }}</td>
       <td>{{ record.company_name }}</td>
