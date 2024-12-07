@@ -167,33 +167,14 @@ def register():
 @app.route('/overview', methods=['GET'])
 def overview():
     try:
-        
-        user_id = current_user.id if current_user.is_authenticated else None
-        unique_id = request.cookies.get('user_id')
-        user_single_records = (
-            SingleValue.query.filter_by(user_id=user_id).first()
-            if user_id
-            else SingleValue.query.filter_by(unique_id=unique_id).first()
-        )
-        user_final_data = []
-        user_final_records = []
-        if user_single_records != None:
-            app.logger.error(f'Error Fetching Records user_single_records: {user_single_records}')
-            user_final_records = FinalValues.query.filter_by(single_id=user_single_records.id).first()
-            user_final_data = [user_final_records.to_dict()] if user_final_records else []
-            app.logger.error(f'Error Fetching Records user_final_records: {user_final_records}')
-
         single = SingleValue.query.all()
         final = FinalValues.query.all()
-        # app.logger.debug(f"Final Records: {final}")
-        
-        # return single_recoreds
-
         final_data = [record.to_dict() for record in final]
         
         energy_usage_values = [record['energy_usage'] for record in final_data]
         waste_values = [record['waste'] for record in final_data]
         business_travel_values = [record['business_travel'] for record in final_data]
+        suggestions= []
         stats = {
             "energy_usage": {
                 "min": min(energy_usage_values) if energy_usage_values else None,
@@ -213,6 +194,34 @@ def overview():
                 "avg": sum(business_travel_values) / len(business_travel_values) if business_travel_values else None
             }
         }
+        
+        user_id = current_user.id if current_user.is_authenticated else None
+        unique_id = request.cookies.get('user_id')
+        user_single_records = (
+            SingleValue.query.filter_by(user_id=user_id).first()
+            if user_id
+            else SingleValue.query.filter_by(unique_id=unique_id).first()
+        )
+        user_final_data = []
+        user_final_records = []
+        if user_single_records != None:
+            app.logger.error(f'Error Fetching Records user_single_records: {user_single_records}')
+            user_final_records = FinalValues.query.filter_by(single_id=user_single_records.id).first()
+            user_final_data = [user_final_records.to_dict()] if user_final_records else []
+            if final:
+                suggestions = classes.generate_dynamic_suggestions(user_final_records.energy_usage, user_final_records.waste, user_final_records.business_travel, stats)
+
+            app.logger.error(f'Error Fetching Records user_final_records: {user_final_records}')
+
+        
+        # app.logger.debug(f"Final Records: {final}")
+        
+        # return single_recoreds
+
+        
+        
+        
+        
         return render_template('dashboard/overview.html',
                                user_single=user_single_records, 
                                user_final=user_final_records, 
@@ -220,7 +229,8 @@ def overview():
                                final=final, 
                                user_id=user_id,
                                stats =stats ,
-                               user_final_data=user_final_data
+                               user_final_data=user_final_data,
+                               suggestions=suggestions
                                )
     except Exception as ex:
         app.logger.error(f'Error Fetching Records: {ex}')
