@@ -167,31 +167,61 @@ def register():
 @app.route('/overview', methods=['GET'])
 def overview():
     try:
-        if current_user.is_authenticated:
-            user_id = current_user.id
+        
+        user_id = current_user.id if current_user.is_authenticated else None
         unique_id = request.cookies.get('user_id')
-        if user_id:
-            user_single_records = SingleValue.query.filter_by(user_id=user_id).first()
-        elif unique_id:
-            user_single_records = SingleValue.query.filter_by(unique_id=unique_id).first()
-        else:
-            user_single_records = []
-        if user_single_records:
+        user_single_records = (
+            SingleValue.query.filter_by(user_id=user_id).first()
+            if user_id
+            else SingleValue.query.filter_by(unique_id=unique_id).first()
+        )
+        user_final_data = []
+        user_final_records = []
+        if user_single_records != None:
+            app.logger.error(f'Error Fetching Records user_single_records: {user_single_records}')
             user_final_records = FinalValues.query.filter_by(single_id=user_single_records.id).first()
+            user_final_data = [user_final_records.to_dict()] if user_final_records else []
+            app.logger.error(f'Error Fetching Records user_final_records: {user_final_records}')
 
-        user_id = request.cookies.get('user_id')
         single = SingleValue.query.all()
         final = FinalValues.query.all()
         # app.logger.debug(f"Final Records: {final}")
         
         # return single_recoreds
 
+        final_data = [record.to_dict() for record in final]
+        
+        energy_usage_values = [record['energy_usage'] for record in final_data]
+        waste_values = [record['waste'] for record in final_data]
+        business_travel_values = [record['business_travel'] for record in final_data]
+        stats = {
+            "energy_usage": {
+                "min": min(energy_usage_values) if energy_usage_values else None,
+                "max": max(energy_usage_values) if energy_usage_values else None,
+                "avg": sum(energy_usage_values) / len(energy_usage_values) if energy_usage_values else None
+
+            },
+            "waste": {
+                "min": min(waste_values) if waste_values else None,
+                "max": max(waste_values) if waste_values else None,
+                "avg": sum(waste_values) / len(waste_values) if waste_values else None
+
+            },
+            "business_travel": {
+                "min": min(business_travel_values) if business_travel_values else None,
+                "max": max(business_travel_values) if business_travel_values else None,
+                "avg": sum(business_travel_values) / len(business_travel_values) if business_travel_values else None
+            }
+        }
         return render_template('dashboard/overview.html',
                                user_single=user_single_records, 
                                user_final=user_final_records, 
                                single=single, 
                                final=final, 
-                               user_id=user_id)
+                               user_id=user_id,
+                               stats =stats ,
+                               user_final_data=user_final_data
+                               )
     except Exception as ex:
         app.logger.error(f'Error Fetching Records: {ex}')
         flash(f'Error accured: {ex}')

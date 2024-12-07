@@ -58,3 +58,11 @@ class FinalValues(db.Model):
 
     def __repr__(self):
         return f"<FinalValues User ID: {self.single_id}>"
+    
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'energy_usage': self.energy_usage,
+            'waste': self.waste,
+            'business_travel': self.business_travel,
+        }
