@@ -1,7 +1,0 @@
-Carbon Footprint Report for company my first campany
-Date: 2024-12-09 20:51:15
-
-Energy Usage: 2678.316 kg CO2
-Waste: 165.11999999999998 kg CO2
-Business Travel: 3.336666666666667 kg CO2
-
