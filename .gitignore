@@ -6,4 +6,5 @@ migrations/
 app.db
 node_modules/
 app.log
+reports/
 
