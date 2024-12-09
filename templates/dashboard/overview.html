@@ -11,7 +11,7 @@
     </div>
     <canvas id="myChart"></canvas>
   </div>
-  
+
   <div
     class="bg-gray-100 rounded-lg dark:bg-gray-800 py-8 px-4 mx-auto max-w-screen-xl mt-10"
   >
@@ -19,10 +19,48 @@
       <h2 class="text-4xl font-extrabold dark:text-white">What should I do?</h2>
     </div>
 
-    {% for suggestion in suggestions %}
-    <!-- <li class="suggestion {{ suggestion.status }}">{{ suggestion.icon }}</li> -->
+    {% if user_final_data %}
+    <div class="">
+      <a
+        href="{{ url_for('download_report', unique_id=user_single.unique_id) }}"
+      >
+        <button
+          type="button"
+          class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+        >
+          Download My Report
+        </button>
+      </a>
+
+      {% for suggestion in suggestions %}
+      <!-- <li class="suggestion {{ suggestion.status }}">{{ suggestion.icon }}</li> -->
+      <div
+        class="text-lg flex items-center p-4 mb-4 {{ 'text-red-800 bg-red-50 dark:bg-gray-800 dark:text-red-400' if suggestion.status == 'high' else 'bg-green-50 dark:bg-gray-800 dark:text-green-400' }} rounded-lg"
+        role="alert"
+      >
+        <svg
+          class="flex-shrink-0 inline w-4 h-4 me-3"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"
+          />
+        </svg>
+        <span class="sr-only">Info</span>
+        <div>
+          <span class="font-bold">{{ suggestion.category }}: </span>{{
+          suggestion.text }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    <div id="suggestions-container"></div>
+    {% else %}
     <div
-      class="text-lg flex items-center p-4 mb-4 {{ 'text-red-800 bg-red-50 dark:bg-gray-800 dark:text-red-400' if suggestion.status == 'high' else 'bg-green-50 dark:bg-gray-800 dark:text-green-400' }} rounded-lg"
+      class="text-lg flex items-center p-4 mb-4 bg-green-50 dark:bg-gray-800 dark:text-green-400 rounded-lg"
       role="alert"
     >
       <svg
@@ -38,12 +76,17 @@
       </svg>
       <span class="sr-only">Info</span>
       <div>
-        <span class="font-bold">{{ suggestion.category }}: </span>{{
-        suggestion.text }}
+        <span class="font-bold"
+          >You can calculate you Carbon Foot Print than click here:
+          <a
+            class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            href="{{ url_for('calculate') }}"
+            >Calculate</a
+          ></span
+        >
       </div>
     </div>
-    {% endfor %}
-    <div id="suggestions-container"></div>
+    {% endif %}
   </div>
 
   <script>

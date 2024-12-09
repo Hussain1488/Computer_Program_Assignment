@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, request, redirect, flash,make_response
+from flask import Flask, render_template, url_for, request, redirect, flash,make_response,send_file
 from flask_migrate import Migrate
 from extensions import db, bcrypt
 from tables import User, SingleValue, FinalValues
@@ -38,10 +38,6 @@ def load_user(user_id):
 
 @app.route('/')
 def index():
-    if current_user.is_authenticated:
-        flash(f'Hello {current_user.username}!', 'success')  # Success message
-    else:
-        flash(f'Hello Gust!', 'success')
     return render_template('dashboard/index.html')
 
 @app.route('/calculate', methods=['GET', 'POST'])
@@ -50,13 +46,14 @@ def calculate():
     if request.method == 'GET':
         return render_template('dashboard/create.html')
     else:
-        unique_id = request.cookies.get('user_id')
-        if not unique_id:
-            unique_id = str(uuid.uuid4())
-            response = make_response(render_template('dashboard/create.html'))
-            response.set_cookie('user_id', unique_id, max_age=60*60*24*365)  # Setting the cookie
-            return response
+        
         try:
+            unique_id = request.cookies.get('user_id')
+            if not unique_id:
+                unique_id = str(uuid.uuid4())
+                response = make_response(render_template('dashboard/create.html'))
+                response.set_cookie('user_id', unique_id, max_age=60*60*24*365)  # Setting the cookie
+                return response
             electricity_bill = float(request.form.get('electricity_bill', 0))
             gas_bill = float(request.form.get('gas_bill', 0))
             fuel_bill = float(request.form.get('fuel_bill', 0))
@@ -67,6 +64,7 @@ def calculate():
         
             if any(value < 0 for value in [electricity_bill, gas_bill, fuel_bill, waste_generate, recycled_waste, yearly_travel, fuel_usage]):
                 raise ValueError("Inputs cannot be negative.")
+            
             company_name = ''
             if current_user.is_authenticated:
                 company_name = current_user.company_name
@@ -94,6 +92,8 @@ def calculate():
             waste = classes.final_waste(waste_generate,recycled_waste)
             business_travel = classes.final_travel(yearly_travel, fuel_usage)
             
+            classes.save_report(unique_id, company_name, energy_usage, waste, business_travel)
+            
             db.session.add(new_value)
             db.session.commit()
             
@@ -115,54 +115,62 @@ def calculate():
             flash(f'An unexpected error occurred. Please try again. {e}', 'danger')
             return render_template('dashboard/create.html', form_data=request.form)
         flash('your data has been stored successfuly', 'success')
-        return render_template('dashboard/create.html', form_data=request.form)
+        return redirect('/calculate')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        password = request.form.get('password')
-        user = User.query.filter_by(username=username).first()
+    if current_user.is_authenticated:
+        flash('You are logged in', 'info')
+        return redirect('/')
+    else:
+        if request.method == 'POST':
+            username = request.form.get('username')
+            password = request.form.get('password')
+            user = User.query.filter_by(username=username).first()
 
-        if user and user.check_password(password):
-            login_user(user)
-            app.logger.info(f"User {username} logged in successfully")
-            flash('Login successful!', 'success')  # Success message
-            return redirect(url_for('index'))
-        else:
-            app.logger.error(f"Invalid login attempt for user {username}")
-            flash('Invalid username or password.', 'danger')
-    return render_template('Auth/login.html')
+            if user and user.check_password(password):
+                login_user(user)
+                app.logger.info(f"User {username} logged in successfully")
+                flash('Login successful!', 'success')  # Success message
+                return redirect(url_for('index'))
+            else:
+                app.logger.error(f"Invalid login attempt for user {username}")
+                flash('Invalid username or password.', 'danger')
+        return render_template('Auth/login.html')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    if request.method == 'POST':
-        username = request.form.get('username')
-        email = request.form.get('email')
-        email_validator = classes.email_validator(email)
-        if not email_validator:
-            flash('wrong email format', 'danger')
-            return redirect(url_for('register', request=request))
-        password = request.form.get('password')
-        re_password = request.form.get('re_password')
-        company_name = request.form.get('company_name')
-        if password != re_password: 
-            flash('password doesn\'t match.', 'danger')
-            return redirect(url_for('register', request=request))
+    if current_user.is_authenticated:
+        flash('You are registred and logged in', 'info')
+        return redirect('/')
+    else:
+        if request.method == 'POST':
+            username = request.form.get('username')
+            email = request.form.get('email')
+            email_validator = classes.email_validator(email)
+            if not email_validator:
+                flash('wrong email format', 'danger')
+                return redirect(url_for('register', request=request))
+            password = request.form.get('password')
+            re_password = request.form.get('re_password')
+            company_name = request.form.get('company_name')
+            if password != re_password: 
+                flash('password doesn\'t match.', 'danger')
+                return redirect(url_for('register', request=request))
 
-        existing_user = User.query.filter((User.username == username) | (User.email == email)).first()
-        if existing_user:
-            flash('Username or email already taken.', 'warning')
-            return redirect(url_for('register', request=request))
+            existing_user = User.query.filter((User.username == username) | (User.email == email)).first()
+            if existing_user:
+                flash('Username or email already taken.', 'warning')
+                return redirect(url_for('register', request=request))
 
-        new_user = User(username=username, email=email, company_name=company_name)
-        new_user.set_password(password)
-        db.session.add(new_user)
-        db.session.commit()
+            new_user = User(username=username, email=email, company_name=company_name)
+            new_user.set_password(password)
+            db.session.add(new_user)
+            db.session.commit()
 
-        flash('Registration successful! Please log in.', 'success')
-        return redirect(url_for('login'))
-    return render_template('Auth/register.html')
+            flash('Registration successful! Please log in.', 'success')
+            return redirect(url_for('login'))
+        return render_template('Auth/register.html')
 
 @app.route('/overview', methods=['GET'])
 def overview():
@@ -210,18 +218,10 @@ def overview():
             user_final_data = [user_final_records.to_dict()] if user_final_records else []
             if final:
                 suggestions = classes.generate_dynamic_suggestions(user_final_records.energy_usage, user_final_records.waste, user_final_records.business_travel, stats)
+                classes.add_or_update_suggestions_to_report(user_single_records.unique_id, suggestions)
 
             app.logger.error(f'Error Fetching Records user_final_records: {user_final_records}')
 
-        
-        # app.logger.debug(f"Final Records: {final}")
-        
-        # return single_recoreds
-
-        
-        
-        
-        
         return render_template('dashboard/overview.html',
                                user_single=user_single_records, 
                                user_final=user_final_records, 
@@ -238,10 +238,26 @@ def overview():
         return redirect('/')
     
 
+@app.route('/download_report', methods=['GET'])
+def download_report():
+    unique_id = request.cookies.get('user_id')
+    report_folder = 'reports/'
+    report_filename = f"{report_folder}{unique_id}.txt"
+    
+    try:
+        return send_file(report_filename, as_attachment=True)
+    except FileNotFoundError:
+        flash("Report not found!", "danger")
+        return redirect('/overview')
+
 @app.route('/logout')
 def logout():
-    logout_user()  # Logs out the current user
-    flash('You have been logged out.', 'info')  # Optional flash message
-    return redirect('/')
+    if not current_user.is_authenticated:
+        flash('you are not logged in', 'warning')
+        return redirect('/')
+    else:
+        logout_user()  # Logs out the current user
+        flash('You have been logged out.', 'info')  # Optional flash message
+        return redirect('/')
 if __name__ == "__main__":
     app.run(debug=True)

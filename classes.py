@@ -1,5 +1,6 @@
-import re
+import re, os
 from flask import Flask, jsonify, request
+from datetime import datetime
 
 def email_validator(email):
   pattern = r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
@@ -116,3 +117,54 @@ def generate_dynamic_suggestions(energy_usage, waste, business_travel, stats):
             ))
 
     return suggestions
+
+
+def save_report(unique_id, company_name, energy_usage, waste, business_travel):
+    report_folder = 'reports/'
+    if not os.path.exists(report_folder):
+        os.makedirs(report_folder)
+    
+    report_filename = f"{report_folder}{unique_id}.txt"  # Save in 'reports/' folder
+    
+    with open(report_filename, 'w') as f:
+        f.write(f"Carbon Footprint Report for company {company_name}\n")
+        f.write(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+        f.write(f"Energy Usage: {energy_usage} kg CO2\n")
+        f.write(f"Waste: {waste} kg CO2\n")
+        f.write(f"Business Travel: {business_travel} kg CO2\n\n")
+    
+    return report_filename
+
+
+def add_or_update_suggestions_to_report(unique_id, suggestions):
+    report_folder = 'reports/'
+    report_filename = f"{report_folder}{unique_id}.txt"
+    
+    if os.path.exists(report_filename):
+        # Read the existing report content
+        with open(report_filename, 'r') as f:
+            lines = f.readlines()
+        
+        # Find the start of suggestions (if they exist)
+        start_index = None
+        for i, line in enumerate(lines):
+            if "Suggestions for Reducing Carbon Footprint:" in line:
+                start_index = i
+                break
+        
+        # If suggestions exist, remove the old ones
+        if start_index is not None:
+            lines = lines[:start_index]
+        
+        # Write the updated content with new suggestions
+        with open(report_filename, 'w') as f:
+            f.writelines(lines)  # Write the report content (without old suggestions)
+            f.write("\nSuggestions for Reducing Carbon Footprint:\n")
+            for suggestion in suggestions:
+                f.write(f"Category: {suggestion['category']}\n")
+                f.write(f"Status: {suggestion['status']}\n")
+                f.write(f"Message: {suggestion['text']}\n")
+                f.write("-" * 40 + "\n")  # Separator for readability
+    else:
+        # If the report doesn't exist, raise an error or handle accordingly
+        raise FileNotFoundError(f"Report file {report_filename} does not exist.")

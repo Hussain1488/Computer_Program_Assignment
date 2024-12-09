@@ -1,38 +1,36 @@
 <script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
-{% with messages = get_flashed_messages(with_categories=true) %}
-{% if messages %}
-{% for category, message in messages %}
+<script src="https://cdn.jsdelivr.net/npm/izitoast@1.4.0/dist/js/iziToast.min.js"></script>
+{% with messages = get_flashed_messages(with_categories=True) %} {% if messages
+%} {% for category, message in messages %}
 <script>
   {% if category == 'success' %}
   iziToast.success({
     title: 'Success',
-    message: '{{ message }}',
+    message: '{{ message|escape|safe }}',
     position: 'topRight',
     timeout: 3000
   });
   {% elif category == 'danger' %}
   iziToast.error({
     title: 'Error',
-    message: '{{ message }}',
+    message: '{{ message|escape|safe }}',
     position: 'topRight',
     timeout: 3000
   });
   {% elif category == 'info' %}
   iziToast.info({
     title: 'Info',
-    message: '{{ message }}',
+    message: '{{ message|escape|safe }}',
     position: 'topRight',
     timeout: 3000
   });
   {% elif category == 'warning' %}
   iziToast.warning({
     title: 'Warning',
-    message: '{{ message }}',
+    message: '{{ message|escape|safe }}',
     position: 'topRight',
     timeout: 3000
   });
   {% endif %}
 </script>
-{% endfor %}
-{% endif %}
-{% endwith %}
+{% endfor %} {% endif %} {% endwith %}
