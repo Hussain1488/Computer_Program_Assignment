@@ -1,56 +1,64 @@
-# Computer_Program_Assignment
+# Flask Carbon Footprint Monitoring Tool
 
-# install virtual envirnment by command:
+## Overview
 
-pip isntall virtualenv env
+This project is a web-based application developed using Flask that helps businesses monitor and reduce their carbon footprints. It calculates emissions based on user inputs, generates reports, and offers suggestions for improvement.
 
-# set the envirnment to run:
-
-pip .\env\Scripts\activate
-
-# Flask Carbon Footprint Project
-
-This is a Flask-based web application for tracking user activity and calculating carbon footprints. The project includes user authentication, database integration, and Flask-Migrate for database migrations.
+---
 
 ## Features
 
-- User registration and login
-- Store and track user activities
-- Calculate and monitor carbon footprints
-- Database migrations with Flask-Migrate
-- Modular architecture for scalability
+- **User Authentication**: Secure login and registration system.
+- **Input & Calculation**: Collects data on energy use, waste, and travel, and calculates carbon emissions.
+- **Reports**: Generates downloadable `.txt` reports with suggestions.
+- **Dynamic Summaries**: Provides statistics and trends across multiple reports.
+- **Error Handling**: Validates user inputs and handles errors gracefully.
+- **Database Integration**: Uses SQLite and Flask-SQLAlchemy for storage and management.
 
-## Requirements
-
-- Python 3.8+
-- Flask
-- Flask-SQLAlchemy
-- Flask-Bcrypt
-- Flask-Migrate
+---
 
 ## Installation
 
-1. Clone the repository:
+### Step 1: Clone the Repository
 
-   ```bash
-   git clone https://github.com/your-repo/flask-carbon-footprint.git
-   cd flask-carbon-footprint
-   ```
+```bash
+git clone https://github.com/Hussain1488/Computer_Program_Assignment.git
+cd Computer_Program_Assignment
+```
 
-2. to run tailwindCss:
-   ```bash
-   npx tailwindcss -i ./src/tailwind.css -o ./static/style/tailwind.css --watch
-   ```
-3. database start:
-   ```bash
-   1. pip install flask-migrate
-   ```
-   ```bash
-   2. flask db init
-   ```
-   ```bash
-   3. flask db migrate -m "Initial migration"
-   ```
-   ```bash
-   4. flask db upgrade
-   ```
+### Step 2: Create a Virtual Environment
+
+```bash
+run:
+   python -m venv env
+   source env/bin/activate  # On Windows, use: .\env\Scripts\activate
+```
+
+### Step 3: Install Dependencies
+
+```bash
+run:
+   pip install -r requirements.txt
+```
+
+### Step 4: Initialize the Database
+
+```bash
+run:
+   flask db init
+   flask db migrate
+   flask db upgrade
+```
+
+### Step 5: Run the Application
+
+```bash
+run:
+   python app.py
+```
+
+### to run tailwindCss:
+
+```bash
+npx tailwindcss -i ./src/tailwind.css -o ./static/style/tailwind.css --watch
+```
